@@ -1,0 +1,30 @@
+@import '@/styles/theme/theme';
+@import '@/styles/mixins/mixins.scss';
+
+.outer {
+  padding: 10px;
+  .main{
+    min-height: 100vh;
+    max-width: 80%;
+    padding: 25px 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    .inner {
+      .item {
+        margin: 10px;
+        padding: 5px;
+        .title {
+          font-weight: 500;
+        }
+        .back {
+          font-weight: 500;
+        }
+        .formCol {
+          min-width: 300px;
+        }
+      }
+    }
+  }
+}

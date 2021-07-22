@@ -1,0 +1,15 @@
+@import '../theme/theme';
+
+.header {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+  .title {
+    color: $text-med;
+    font-weight: 400;
+  }
+  .tagline {
+    color: $text-med;
+  }
+}

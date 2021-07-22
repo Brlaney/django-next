@@ -1,0 +1,31 @@
+@import '@/styles/theme/theme';
+@import '@/styles/mixins/mixins.scss';
+
+.container {
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .main {
+    min-height: 100vh;
+    min-width: 100vw;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 1rem;
+    margin: 0 1rem 0 1rem;
+    .grid {
+      .item {
+        .paper {
+          .header { 
+            color: $text-dark;
+          }
+        }
+      }
+    }
+  }
+}

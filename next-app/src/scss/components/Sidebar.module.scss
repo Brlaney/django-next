@@ -1,0 +1,28 @@
+@import '../theme/theme';
+
+.card {
+  padding: 0.62rem;
+  display: flex;
+  justify-content: center;
+  .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.9rem;
+    flex: 0 0 fill;
+    .title {
+      font-weight: 500;
+      line-height: 1.10;
+      font-size: 2.1rem;
+      margin-bottom: 0.61rem;
+    }
+    .subtitle {
+      font-weight: 400;
+    }
+    .body {
+      font-size: 1.21rem;
+      padding-top: 1.21rem;
+      margin-bottom: 0.67rem;
+    }
+  }
+}

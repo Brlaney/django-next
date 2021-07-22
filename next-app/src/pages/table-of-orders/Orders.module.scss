@@ -1,0 +1,29 @@
+@import '@/styles/theme/theme';
+@import '@/styles/mixins/mixins.scss';
+
+.container {
+  min-height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .main {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 1rem;
+    .noList {
+      padding: 2rem;
+      margin: 1rem;
+      text-align: center;
+    }
+    .paper {
+      border-radius: 1rem;
+      padding: 1rem; 
+      display: flex; 
+      flex: 1;
+      flex-direction: column;
+    }
+  }
+}
