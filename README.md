@@ -5,7 +5,6 @@
     </a>
     <a href="#status"><img src="https://img.shields.io/badge/Maintained-yes-green.svg?style=flat-square"></a>
   </p>
-  </br>
   <h1>Django-Next</h1>
   <h5>A basic, full-stack web application</h5>
   <p><b>Django-Next</b> uses <b>Django</b> To assemble a rest API backend. The client-side uses Next.js which then can implement CRUD operations to the API.</p>
