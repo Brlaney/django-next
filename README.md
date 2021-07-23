@@ -16,13 +16,13 @@
 
 * [Installation](#installation)
 
-    * [Package Managers](#package-managers)
+  * [Package Managers](#package-managers)
 
-    * [CDN](#cdn)
+  * [CDN](#cdn)
 
-    * [Downloads](#downloads)
+  * [Downloads](#downloads)
 
-    * [Clone Repository](#clone-repository)
+  * [Clone Repository](#clone-repository)
 
 * [Usage](#usage)
 
@@ -36,9 +36,9 @@
 
 * [Supporters](#supporters)
 
-    * [Stargazers](#stargazers)
+  * [Stargazers](#stargazers)
 
-    * [Forkers](#stargazers)
+  * [Forkers](#stargazers)
 
 * [Thanks](#thanks)
 
@@ -66,19 +66,19 @@
 
 # Quick Start
 
-1.  Create A Readme File File
+1. Create A Readme File File
 
 ```markdown
 <!-- With Nothing Inside It. -->
 ```
 
-1.  Copy The Readme Code Of This Project To Your Project
+1. Copy The Readme Code Of This Project To Your Project
 
 ```markdown
 <!-- Replace This With The Code With The Readme Code -->
 ```
 
-1.  Now you are all set to rock on github.
+1. Now you are all set to rock on github.
 
 [Back To Top][top]
 
@@ -91,7 +91,7 @@ There are various ways to install this readme template
 
 ## Package Managers
 
-####  **NPM** - A NodeJs Based Package Manager.
+#### **NPM** - A NodeJs Based Package Manager.
 
 ```bash
 npm install # Your Project Installation Instructions
@@ -103,7 +103,7 @@ npm install # Your Project Installation Instructions
 yarn add # Your Project Installation Instructions
 ```
 
-####   PNPM - A Faster NodeJS Based Package Manager
+#### PNPM - A Faster NodeJS Based Package Manager
 
 ```bash
 pnpm install # Your Project Installation Instructions
@@ -138,6 +138,7 @@ bower install # you/your-repo
 ```
 
 #### Unpkg
+
 ```
 # Add Your Instructions
 ```
@@ -152,12 +153,12 @@ bower install # you/your-repo
 
 ## Downloads
 
-*   Minified Version: <!-- Remove If Not Applicable -->
-*   Main File: **# Add Your Instructions**    
-*   Full Repository - **# Add Your Instructions**
+* Minified Version: <!-- Remove If Not Applicable -->
+* Main File: **# Add Your Instructions**
+* Full Repository - **# Add Your Instructions**
 
 [Back To Top][top]
-    
+
 ## Clone Repository
 
 ####   Using Git
