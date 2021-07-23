@@ -174,84 +174,17 @@ gh repo clone # Your Username/Your Repo Name
 
 [Back To Top][top]
 
-## Usage
-
-<!-- Include Your Usage Instructions Here. -->
-
-> Know Any Other Platform Or Have Any More Ideas Kindly. Give A [Issue][issues] Or If Possible Submit A [Pull Request](https://github.com/krishdevdb/readme-template/pulls)
-
-# Get Support
-
-> This project has a [code of conduct](https://github.com/krishdevdb/readme-template/blob/master/.github/contributing.md).
-> By interacting with this repository, or community you agree to
-> abide by its terms.
-
-Hi! 👋🏻
-
-We're excited that you're using **readme-template** and we'd love to help.
-
-*   [See The Wiki][wiki]
-
-*   [Start A Discussion On Github][chat]
-
-*   [Add A Issue On Github](https://github.com/krishdevdb/readme-template/issues)
-
-# Support Us
-
-## Review
-
-*   <a href="https://www.producthunt.com/posts/readme-template?utm_source=badge-review&utm_medium=badge&utm_souce=badge-readme-template#discussion-body" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/review.svg?post_id=286773&theme=light" alt="Readme Template - A Readme Template For Tomorrow's Opensource | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-
 ## Spread
 
-*   Twitter: [![](https://img.shields.io/badge/Share-Twitter-%231DA1F2?style=flat-square)](https://twitter.com/intent/tweet?url=https://github.com/krishdevdb/readme-template\&text=This%20Readme%20Template%20Helped%20Me%20A%20Lot%20In%20My%20Opensource%20Project.%20Make%20Sure%20To%20Check%20It%20Out)
+* Twitter: [![](https://img.shields.io/badge/Share-Twitter-%231DA1F2?style=flat-square)](https://twitter.com/intent/tweet?url=https://github.com/krishdevdb/readme-template\&text=This%20Readme%20Template%20Helped%20Me%20A%20Lot%20In%20My%20Opensource%20Project.%20Make%20Sure%20To%20Check%20It%20Out)
 
-*   Facebook: [![](https://img.shields.io/badge/Share-Facebook-%233b5998?style=flat-square)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/krishdevdb/readme-template)
+* Facebook: [![](https://img.shields.io/badge/Share-Facebook-%233b5998?style=flat-square)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/krishdevdb/readme-template)
 
-*   Linkedin: [![](https://img.shields.io/badge/Share-Linkedin-%230e76a8?style=flat-square)](https://www.linkedin.com/shareArticle?mini=true\&url=https://github.com/krishdevdb/readme-template)
+* Linkedin: [![](https://img.shields.io/badge/Share-Linkedin-%230e76a8?style=flat-square)](https://www.linkedin.com/shareArticle?mini=true\&url=https://github.com/krishdevdb/readme-template)
 
-*   Pinterest: [![](https://img.shields.io/badge/Share-Pinterest-%23c8232c?style=flat-square)](https://pinterest.com/pin/create/button/?url=https://github.com/krishdevdb/readme-template\&media=\&description=This%20Readme%20Template%20Helped%20Me%20A%20Lot%20In%20My%20Opensource%20Project.%20Make%20Sure%20To%20Check%20It%20Out)
+* Pinterest: [![](https://img.shields.io/badge/Share-Pinterest-%23c8232c?style=flat-square)](https://pinterest.com/pin/create/button/?url=https://github.com/krishdevdb/readme-template\&media=\&description=This%20Readme%20Template%20Helped%20Me%20A%20Lot%20In%20My%20Opensource%20Project.%20Make%20Sure%20To%20Check%20It%20Out)
 
-*   Email: [![](https://img.shields.io/badge/Share-Email-green?style=flat-square)](mailto:info@example.com?\&subject=\&cc=\&bcc=\&body=https://github.com/krishdevdb/readme-template%0AThis%20Readme%20Template%20Helped%20Me%20A%20Lot%20In%20My%20Opensource%20Project.%20Make%20Sure%20To%20Check%20It%20Out)
-
-## Sponsor
-
-*   <a href="https://patreon.com/krishdevdb">patreon.com/<strong>krishdevdb</strong></a>
-    
-*   <a href="https://ko-fi.com/krishdevdb">ko-fi.com/<strong>krishdevdb</strong>
-    </a>
-    
-*   <a href="https://liberapay.com/krishdevdb">liberapay.com/<strong>krishdevdb</strong></a>
-
-# Roadmap
-
-* Include Your Rodmap Here
-
-* All Issues On Github
-
-# Authors
-
-| ![krishdevdb](https://avatars.githubusercontent.com/u/76587897?s=100) |
-| :----------------------------------------------------------: |
-| Krish |
-| [Github](https://github.com/krishdevdb) |
-| [Email](mailto:krishdevdb@gmail.com) |
-
-# Supporters
-
-## Stargazers
-
-[![](https://reporoster.com/stars/krishdevdb/readme-template)](https://github.com/krishdevdb/readme-template/stargazers)
-
-## Forks
-
-[![](https://reporoster.com/forks/krishdevdb/readme-template)](https://github.com/krishdevdb/readme-template/fork)
-
-# Thanks
-
-## Stars
-
-[![Stargazers over time](https://starchart.cc/krishdevdb/readme-template.svg)](https://starchart.cc/krishdevdb/readme-template)
+* Email: [![](https://img.shields.io/badge/Share-Email-green?style=flat-square)](mailto:info@example.com?\&subject=\&cc=\&bcc=\&body=https://github.com/krishdevdb/readme-template%0AThis%20Readme%20Template%20Helped%20Me%20A%20Lot%20In%20My%20Opensource%20Project.%20Make%20Sure%20To%20Check%20It%20Out)
 
 # License
 ```
