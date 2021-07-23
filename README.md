@@ -1,9 +1,16 @@
-<div align="center" id="top"><p>
-  <a href="https://github.com/krishdevdb/readme-template/commits/master"><img src="https://img.shields.io/github/last-commit/krishdevdb/readme-template?style=flat-square"></a>
-  <a href="#status"><img src="https://img.shields.io/badge/Maintained-yes-green.svg?style=flat-square"></a></p><img height="100px" width="100px" src="./logo.png">
-  <br><h1>Django-Next</h1><h5>A basic, full-stack web application</h5><p><b>Django-Next</b> uses <b>Django</b> To assemble a rest API backend. The client-side uses Next.js which then can implement CRUD operations to the API.</p>
+<div align="center" id="top">
+  <p>
+    <a href="https://github.com/krishdevdb/readme-template/commits/master">
+      <img src="https://img.shields.io/github/last-commit/krishdevdb/readme-template?style=flat-square">
+    </a>
+    <a href="#status"><img src="https://img.shields.io/badge/Maintained-yes-green.svg?style=flat-square"></a>
+  </p>
+  </br>
+  <h1>Django-Next</h1>
+  <h5>A basic, full-stack web application</h5>
+  <p><b>Django-Next</b> uses <b>Django</b> To assemble a rest API backend. The client-side uses Next.js which then can implement CRUD operations to the API.</p>
   <a href="https://twitter.com/Brendan_webdev">
-  <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=%23ffffff00&amp;logo=twitter&amp;style=for-the-badge&amp;url=https%3A%2F%2Fgithub.com%2Fkrishdevdb%2Freadme-template">
+    <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=%23ffffff00&amp;logo=twitter&amp;style=for-the-badge&amp;url=https%3A%2F%2Fgithub.com%2Fkrishdevdb%2Freadme-template">
   </a>
   <a href="https://github.com/krishdevdb/readme-template/stargazers"><img alt="GitHub Repo Stars" src="https://img.shields.io/github/stars/krishdevdb/readme-template?logo=Github&amp;style=for-the-badge"></a>
 </div>
