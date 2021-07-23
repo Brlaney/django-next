@@ -1,7 +1,7 @@
 <div align="center" id="top">
   <p>
-    <a href="https://github.com/krishdevdb/readme-template/commits/master">
-      <img src="https://img.shields.io/github/last-commit/krishdevdb/readme-template?style=flat-square">
+    <a href="https://github.com/brlaney/django-next/commits/master">
+      <img src="https://img.shields.io/github/last-commit/brlaney/django-next?style=flat-square">
     </a>
     <a href="#status"><img src="https://img.shields.io/badge/Maintained-yes-green.svg?style=flat-square"></a>
   </p>
