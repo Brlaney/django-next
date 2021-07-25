@@ -7,7 +7,9 @@ html, body {
   overflow-x: hidden;
   box-sizing: border-box;
   font-family: $primary-font;
-  background-color: $bg-color;
+  background: linear-gradient(90deg, $bg1 0%, $bg2 100%);
+  background: -moz-linear-gradient(90deg, $bg1 0%, $bg2 100%);
+  background: -webkit-linear-gradient(90deg, $bg1 0%, $bg2 100%);
 }
 
 a {
