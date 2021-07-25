@@ -111,6 +111,8 @@ yarn dev
 npm run dev
 ```
 
+Opening http://localhost:3000/ in your browser should now show your frontend Next.js app.
+
 # Connect with me
 
 * Email: <brlaney@outlook.com>
