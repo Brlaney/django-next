@@ -109,8 +109,6 @@ yarn dev
 npm run dev
 ```
 
-[Back To Top][top]
-
 ## Connect with me
 
 * Email: <brlaney@outlook.com>
