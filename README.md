@@ -92,7 +92,7 @@ py manage.py runserver
 ```
 
 Now navigate to [localhost/api](http://127.0.0.1:8000/api) (http://127.0.0.1:8000/api)
-and confirm the initial data was loaded and is being displayed.
+and confirm the initial data was loaded properly.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/64326462/126901766-e187377d-5b0d-4b75-835f-5dc1d0374094.png"
