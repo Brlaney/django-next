@@ -8,9 +8,6 @@
   <h1>Django-Next</h1>
   <h5>A basic, full-stack web application</h5>
   <p><b>Django-Next</b> contains a backend <b>Django app</b> that features restful api endpoints. It also contains </br> a Next.js app for the frontend client-side which fetches data from the backend api.</p>
-  <a href="https://twitter.com/Brendan_webdev">
-    <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=%23ffffff00&amp;logo=twitter&amp;style=for-the-badge&amp;url=https%3A%2F%2Fgithub.com%2Fkrishdevdb%2Freadme-template">
-  </a>
 </div>
 
 # Table Of Contents
