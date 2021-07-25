@@ -74,7 +74,7 @@ and `py manage.py migrate` first and then `py manage.py loaddata fixture` should
 py manage.py runserver
 ```
 
-Now navigate to [localhost/api](http://127.0.0.1:8000/api) (http://127.0.0.1:8000/api)
+Now navigate to http://127.0.0.1:8000/api
 and confirm the initial data was loaded properly.
 
 <p align="center">
