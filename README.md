@@ -28,6 +28,7 @@
 - 🛢 Backend API endpoints using [Django Rest Framework](https://www.django-rest-framework.org/)
 - ✅ Initial data loaded with one command through fixtures [Fixtures](https://docs.djangoproject.com/en/3.2/ref/django-admin/#dumpdata)
   - To checkout the documentation, click the fixtures link and find `loaddata` in the contents sidebar.
+  - The mock data was created using [mockaroo](https://www.mockaroo.com/)
 - 🎨 Sleek frontend styling with [Material-UI](https://github.com/mui-org/material-ui)
 - 🎬 Basic transitions and animations with [Framer Motion](https://github.com/framer/motion)
 
