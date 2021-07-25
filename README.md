@@ -116,9 +116,9 @@ npm run dev
 
 ## Connect with me
 
+* Email: <brlaney@outlook.com>
 * Twitter: [brendan_webdev](https://twitter.com/Brendan_webdev)
 * Instagram: [brlaney94](https://www.instagram.com/brlaney94/)
-* Email: <brlaney@outlook.com>
 
 # License
 
