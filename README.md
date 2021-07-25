@@ -105,7 +105,7 @@ echo > .env.local
 # In your text editor put the following line in your .env.local file
 DJANGO_API=http://localhost:8000/api
 
-# Starting the frontend app
+# Start your frontend app
 yarn dev
 
 # or
