@@ -20,6 +20,7 @@
   * Clone repository
   * Setup the backend
   * Confirm API works
+  * Setup your frontend
 * [License](#license)
 * [Status](#status)
 
