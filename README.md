@@ -114,7 +114,7 @@ npm run dev
 
 [Back To Top][top]
 
-## Spread
+## Connect with me
 
 * Twitter: [![](https://img.shields.io/badge/Share-Twitter-%231DA1F2?style=flat-square)](https://twitter.com/intent/tweet?url=https://github.com/krishdevdb/readme-template\&text=This%20Readme%20Template%20Helped%20Me%20A%20Lot%20In%20My%20Opensource%20Project.%20Make%20Sure%20To%20Check%20It%20Out)
 
@@ -122,7 +122,7 @@ npm run dev
 
 * Linkedin: [![](https://img.shields.io/badge/Share-Linkedin-%230e76a8?style=flat-square)](https://www.linkedin.com/shareArticle?mini=true\&url=https://github.com/krishdevdb/readme-template)
 
-* Email: [![](https://img.shields.io/badge/Share-Email-green?style=flat-square)](mailto:info@example.com?\&subject=\&cc=\&bcc=\&body=https://github.com/krishdevdb/readme-template%0AThis%20Readme%20Template%20Helped%20Me%20A%20Lot%20In%20My%20Opensource%20Project.%20Make%20Sure%20To%20Check%20It%20Out)
+* Email: <brlaney@outlook.com>
 
 # License
 
@@ -150,10 +150,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-# Status
+# Contributions and issues
 
-This project is currently being maintained. And Will Be Maintained. If You Like This Project And Want This Project To Never Exhaust. Please Consider Donating.
-
-[top]: #top
-[ issues ]: https://github.com/brlaney/django-next/issues
-[ pull-requests ]: https://github.com/brlaney/django-next/pulls
+I would love your feedback on my project - please feel free to make a pull request or submit an issue if you find any. Thanks for checking out my project!
