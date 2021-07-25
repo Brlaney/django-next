@@ -7,7 +7,7 @@
   </p>
   <h1>Django-Next</h1>
   <h5>A basic, full-stack web application</h5>
-  <p><b>Django-Next</b> contains a backend <b>Django app</b> that features restful api endpoints. </br> It also contains a <b>Next.js</b> app for the frontend client-side which fetches data from the backend api.</p>
+  <p><b>Django-Next</b> contains a backend <b>Django app</b> that features restful api endpoints. </br> It also contains a <b>Next.js</b> app for the frontend which fetches data from the api.</p>
 </div>
 
 # Table Of Contents
