@@ -27,7 +27,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }))
 
 
-const TableOfOrders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const ArchivedOrders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [orderList] = React.useState(orders)
   // const [orderList] = React.useState('') // Cond'tl return test
 
@@ -95,4 +95,4 @@ export const getStaticProps: GetStaticProps = async _context => {
   }
 }
 
-export default TableOfOrders
+export default ArchivedOrders

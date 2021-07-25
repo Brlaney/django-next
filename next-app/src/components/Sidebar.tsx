@@ -1,35 +1,67 @@
-import Card from '@material-ui/core/Card'
-import CardContent from '@material-ui/core/CardContent'
+import { useState, useEffect, FunctionComponent } from 'react'
+import { useRouter } from 'next/router'
+import Link from '@material-ui/core/Link'
 import Typography from '@material-ui/core/Typography'
 import styles from '@/styles/components/Sidebar.module.scss'
 
+
+const NavItem: FunctionComponent<{
+  active: string
+  setActive: Function
+  name: string
+  route: string
+}> = ({ active, setActive, name, route }) => {
+  return active !== name ? (
+    <Link className={styles.Link} href={route}>
+      <Typography
+        className={styles.navLink}
+        onClick={() => setActive(name)}
+        variant='h5'
+        component='h5'
+      >
+        {name}
+      </Typography>
+    </Link>
+  ) : null
+}
+
 const Sidebar = () => {
+  const { pathname } = useRouter()
+  const [active, setActive] = useState('')
+
+  useEffect(() => {
+    if (pathname === '/') setActive('Homepage')
+    else if (pathname === '/current-orders') setActive('Current Orders')
+    else if (pathname === '/archived-orders') setActive('Archived Orders')
+  }, [])
+
   return (
-    <Card className={styles.card} elevation={0}>
+    <div className={styles.navChild}>
+      <Typography variant='h5' component='h5' className={styles.active}>
+        {active}
+      </Typography>
 
-      {/* Card titles/header */}
-      <CardContent className={styles.content}>
-
-        {/* Introducing myself */}
-        <Typography className={styles.title} variant='h6' component='h2'>
-          Hello, I'm Brendan 👋
-        </Typography>
-
-        {/* My title */}
-        <Typography className={styles.subtitle} variant='subtitle2'>
-          A <strong>full-stack</strong> web developer
-        </Typography>
-
-        {/* Card body content - paragraph text */}
-        <Typography className={styles.body} variant='body1' align='justify' paragraph>
-          I take an <strong>actionable</strong> approach for my clients
-          integrating <strong> SEO</strong>, <strong>accessability</strong>,
-          and your <i>brands</i> <strong> unique</strong> targeted audience
-          into the services I provide.
-        </Typography>
-
-      </CardContent>
-    </Card>
+      <div className={styles.nav}>
+        <NavItem
+          active={active}
+          setActive={setActive}
+          name='Homepage'
+          route='/'
+        />
+        <NavItem
+          active={active}
+          setActive={setActive}
+          name='Current orders'
+          route='/current-orders'
+        />
+        <NavItem
+          active={active}
+          setActive={setActive}
+          name='Archived orders'
+          route='/archived-orders'
+        />
+      </div>
+    </div>
   )
 }
 

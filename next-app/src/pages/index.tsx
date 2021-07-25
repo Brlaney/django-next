@@ -20,14 +20,14 @@ export default function Home() {
         >
 
           {/* Column 1 - left-side column */}
-          <Grid className={styles.gridItem} item md={4} xs={12}>
+          <Grid className={styles.gridItem} item md={3} xs={12}>
             <Paper className={styles.sidebar} elevation={3}>
               <Sidebar />
             </Paper>
           </Grid>
 
           {/* Column 2 - right-side column */}
-          <Grid className={styles.gridItem} item md={8} xs={12}>
+          <Grid className={styles.gridItem} item md={9} xs={12}>
             <Paper className={styles.item} elevation={3}>
               <div>Right-side column | main content</div>
             </Paper>
