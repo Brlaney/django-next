@@ -116,12 +116,8 @@ npm run dev
 
 ## Connect with me
 
-* Twitter: [![](https://img.shields.io/badge/Share-Twitter-%231DA1F2?style=flat-square)](https://twitter.com/intent/tweet?url=https://github.com/krishdevdb/readme-template\&text=This%20Readme%20Template%20Helped%20Me%20A%20Lot%20In%20My%20Opensource%20Project.%20Make%20Sure%20To%20Check%20It%20Out)
-
-* Facebook: [![](https://img.shields.io/badge/Share-Facebook-%233b5998?style=flat-square)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/krishdevdb/readme-template)
-
-* Linkedin: [![](https://img.shields.io/badge/Share-Linkedin-%230e76a8?style=flat-square)](https://www.linkedin.com/shareArticle?mini=true\&url=https://github.com/krishdevdb/readme-template)
-
+* Twitter: [brendan_webdev](https://twitter.com/Brendan_webdev)
+* Instagram: [brlaney94](https://www.instagram.com/brlaney94/)
 * Email: <brlaney@outlook.com>
 
 # License
