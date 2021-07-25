@@ -16,34 +16,9 @@
 # Table Of Contents
 
 * [Quick Start](#quick-start)
-
-* [Installation](#installation)
-
-  * [Package Managers](#package-managers)
-
-  * [CDN](#cdn)
-
-  * [Downloads](#downloads)
-
-  * [Clone Repository](#clone-repository)
-
-* [Usage](#usage)
-
-* [Get Support](#get-support)
-
-* [Support Us](#support-us)
-
-* [Roadmap](#roadmap)
-
-* [Authors](#authors)
-
-* [Supporters](#supporters)
-
-  * [Stargazers](#stargazers)
-
-  * [Forkers](#stargazers)
-
-* [Thanks](#thanks)
+  * Clone repository
+  * Setup the backend
+  * Confirm API works
 
 * [License](#license)
 
@@ -101,97 +76,31 @@ and confirm the initial data was loaded properly.
 
 </br>
 
-[Back To Top][top]
+### 4. Setup the frontend **next-app**
 
-# Installation
-
-There are various ways to install this readme template
-
-<!-- Delete The Package Managers/CDNs Not Applicable To You --> 
-<!-- Replace These Installation Instructions With Your Instructions -->
-
-## Package Managers
-
-#### **NPM** - A NodeJs Based Package Manager.
-
-```bash
-npm install # Your Project Installation Instructions
-```
-
-#### Yarn - A Better Equivalent To NPM.
-
-```bash
-yarn add # Your Project Installation Instructions
-```
-
-#### PNPM - A Faster NodeJS Based Package Manager
-
-```bash
-pnpm install # Your Project Installation Instructions
-```
-
-#### Meteor - Another NodeJs Based Package Manager
-
-```bash
-meteor add # Your Project Installation Instructions
-```
-
-#### Composer - The PHP Package Manager
-
-```bash
-composer require # Your Project Installation Instructions
-```
-
-#### Bower - A Package Manager For The Web
-
-```bash
-bower install # you/your-repo
-```
-
-[Back To Top][top]
-
-## CDN
-
-#### JsDelivir
+Open up another terminal (tab or window) and keep your backend running.
 
 ```
-# Add Your Instructions
-```
+# In the new terminal cd into the next-app directory
+cd next-app
 
-#### Unpkg
+# Install all dependencies
+yarn install 
 
-```
-# Add Your Instructions
-```
+# or if using npm
+npm install
 
-#### Github
+# Create a .env.local file with backend api endpoint inside
+echo > .env.local
 
-```
-# Add Your Instructions
-```
+# In your text editor put the following line in your .env.local file
+DJANGO_API=http://localhost:8000/api
 
-[Back To Top][top]
+# Starting the frontend app
+yarn dev
 
-## Downloads
-
-* Minified Version: <!-- Remove If Not Applicable -->
-* Main File: **# Add Your Instructions**
-* Full Repository - **# Add Your Instructions**
-
-[Back To Top][top]
-
-## Clone Repository
-
-####   Using Git
-
-```bash
-git clone # Your Repository Url With The .git Ending
-```
-
-#### Github Cli
-
-```bash
-gh repo clone # Your Username/Your Repo Name
+# or
+npm run dev
 ```
 
 [Back To Top][top]
@@ -204,11 +113,10 @@ gh repo clone # Your Username/Your Repo Name
 
 * Linkedin: [![](https://img.shields.io/badge/Share-Linkedin-%230e76a8?style=flat-square)](https://www.linkedin.com/shareArticle?mini=true\&url=https://github.com/krishdevdb/readme-template)
 
-* Pinterest: [![](https://img.shields.io/badge/Share-Pinterest-%23c8232c?style=flat-square)](https://pinterest.com/pin/create/button/?url=https://github.com/krishdevdb/readme-template\&media=\&description=This%20Readme%20Template%20Helped%20Me%20A%20Lot%20In%20My%20Opensource%20Project.%20Make%20Sure%20To%20Check%20It%20Out)
-
 * Email: [![](https://img.shields.io/badge/Share-Email-green?style=flat-square)](mailto:info@example.com?\&subject=\&cc=\&bcc=\&body=https://github.com/krishdevdb/readme-template%0AThis%20Readme%20Template%20Helped%20Me%20A%20Lot%20In%20My%20Opensource%20Project.%20Make%20Sure%20To%20Check%20It%20Out)
 
 # License
+
 ```
 MIT License
 
@@ -237,10 +145,6 @@ SOFTWARE.
 
 This project is currently being maintained. And Will Be Maintained. If You Like This Project And Want This Project To Never Exhaust. Please Consider Donating.
 
-
-
 [top]: #top
-[ issues ]: https://github.com/krishdevdb/readme-template/issues
-[ pull-requests ]: https://github.com/krishdevdb/readme-template/pulls
-[ chat ]: https://github.com/krishdevdb/readme-template/discussions
-[ wiki ]: https://github.com/krishdevdb/readme-template/wiki
+[ issues ]: https://github.com/brlaney/django-next/issues
+[ pull-requests ]: https://github.com/brlaney/django-next/pulls
