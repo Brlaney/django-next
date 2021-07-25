@@ -7,7 +7,7 @@
   </p>
   <h1>Django-Next</h1>
   <h5>A basic, full-stack web application</h5>
-  <p><b>Django-Next</b> uses <b>Django</b> To assemble a rest API backend. The client-side uses Next.js which then can implement CRUD operations to the API.</p>
+  <p><b>Django-Next</b> contains a backend <b>Django app</b> that features restful api endpoints. It also contains a Next.js app for the frontend client-side which fetches data from the backend api.</p>
   <a href="https://twitter.com/Brendan_webdev">
     <img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=%23ffffff00&amp;logo=twitter&amp;style=for-the-badge&amp;url=https%3A%2F%2Fgithub.com%2Fkrishdevdb%2Freadme-template">
   </a>
@@ -15,14 +15,20 @@
 
 # Table Of Contents
 
+* [Features](#features)
 * [Quick Start](#quick-start)
   * Clone repository
   * Setup the backend
   * Confirm API works
-
 * [License](#license)
-
 * [Status](#status)
+
+# Features
+
+- Django rest API backend app
+- Next.js frontend app
+- Styling with Material-UI
+- 
 
 # Quick Start
 
