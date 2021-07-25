@@ -15,8 +15,6 @@
 
 # Table Of Contents
 
-* [Features](#features)
-
 * [Quick Start](#quick-start)
 
 * [Installation](#installation)
@@ -51,39 +49,57 @@
 
 * [Status](#status)
 
-# Features
-
-* Back To Top
-
-* Supporters
-
-* Table Of Contents
-
-* HTML Snippet At The Top
-
-* Long Readme
-
-* SEO Perfect
-
- More...
-
-[Back To Top][top]
-
 # Quick Start
 
-1. Create A Readme File File
+1. Clone repository
 
-```markdown
-<!-- With Nothing Inside It. -->
+```bash
+git clone https://github.com/Brlaney/django-next.git
 ```
 
-1. Copy The Readme Code Of This Project To Your Project
+2. Setup the backend **Dj-api**
 
-```markdown
-<!-- Replace This With The Code With The Readme Code -->
+```bash
+cd dj-api
+
+# Activate a virtual environment
+virtualenv ll_env
+ll_env\scripts\activate.bat
+
+# Download necessary packages
+py -m pip install Django djangorestframework django-cors-headers
+
+# Make database migrations
+py manage.py makemigrations
+py manage.py migrate 
+
+# Create admin superuser
+py manage.py createsuperuser
+..<input a username, email, and password>
+
+# Populate your database with initial data from the dj-api/api/fixtures directory
+py manage.py loaddata fixture
 ```
 
-1. Now you are all set to rock on github.
+The terminal should output: `Installed 30 object(s) from 1 fixture(s)`.
+If an error message appears then run `py manage.py migrate --run-syncdb`
+and `py manage.py migrate` first and then `py manage.py loaddata fixture` should work.
+
+3. Confirm your backend is functioning
+
+```bash
+py manage.py runserver
+```
+
+Now navigate to [localhost/api](http://127.0.0.1:8000/api)
+and confirm the initial data was loaded and is being displayed.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/64326462/126901646-4015a7ef-1d60-4ac9-8054-bfb60e501324.png"
+    alt="screenshot-of-api" align="center" width="50%">
+</p>
+
+</br>
 
 [Back To Top][top]
 

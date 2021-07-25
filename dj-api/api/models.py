@@ -11,10 +11,11 @@ class Order(models.Model):
     card = models.CharField(max_length=100)
     company = models.CharField(max_length=100)
     cost = models.CharField(max_length=100)
+    status = models.CharField(max_length=100, default='pending')
     created = models.DateTimeField(auto_now_add=True, auto_now=False, blank=True, null=True)
 
     class Meta:
-        # ordering = ['date']
+        ordering = ['status']
         verbose_name_plural = 'Orders'
 
     def __str__(self):
