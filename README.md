@@ -59,7 +59,7 @@ git clone https://github.com/Brlaney/django-next.git
 
 2. Setup the backend **Dj-api**
 
-```bash
+```C
 cd dj-api
 
 # Activate a virtual environment
@@ -87,15 +87,15 @@ and `py manage.py migrate` first and then `py manage.py loaddata fixture` should
 
 3. Confirm your backend is functioning
 
-```bash
+```C
 py manage.py runserver
 ```
 
-Now navigate to [localhost/api](http://127.0.0.1:8000/api)
+Now navigate to [localhost/api](http://127.0.0.1:8000/api) (http://127.0.0.1:8000/api)
 and confirm the initial data was loaded and is being displayed.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/64326462/126901646-4015a7ef-1d60-4ac9-8054-bfb60e501324.png"
+  <img src="https://user-images.githubusercontent.com/64326462/126901766-e187377d-5b0d-4b75-835f-5dc1d0374094.png"
     alt="screenshot-of-api" align="center" width="50%">
 </p>
 
