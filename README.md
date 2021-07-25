@@ -19,7 +19,7 @@
     - [2. Setup the backend **Dj-api**](#2-setup-the-backend-dj-api)
     - [3. Confirm your backend is functioning](#3-confirm-your-backend-is-functioning)
     - [4. Setup the frontend **next-app**](#4-setup-the-frontend-next-app)
-  - [Connect with me](#connect-with-me)
+- [Connect with me](#connect-with-me)
 - [License](#license)
 - [Contributions and issues](#contributions-and-issues)
 
@@ -111,7 +111,7 @@ yarn dev
 npm run dev
 ```
 
-## Connect with me
+# Connect with me
 
 * Email: <brlaney@outlook.com>
 * Twitter: [brendan_webdev](https://twitter.com/Brendan_webdev)
