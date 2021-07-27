@@ -26,7 +26,7 @@
 # Features
 
 - 🛢 Backend API endpoints using [Django Rest Framework](https://www.django-rest-framework.org/)
-- ✅ Initial data loaded with one command through fixtures [Fixtures](https://docs.djangoproject.com/en/3.2/ref/django-admin/#dumpdata)
+- ✅ Initial data loaded with one command through [fixtures](https://docs.djangoproject.com/en/3.2/ref/django-admin/#dumpdata)
   - To checkout the documentation, click the fixtures link and find `loaddata` in the contents sidebar.
   - The mock data was created using [mockaroo](https://www.mockaroo.com/)
 - 🎨 Sleek frontend styling with [Material-UI](https://github.com/mui-org/material-ui)
@@ -36,13 +36,13 @@
 
 ### 1. Clone repository
 
-```
+```C
 git clone https://github.com/Brlaney/django-next.git
 ```
 
 ### 2. Setup the backend **Dj-api**
 
-```
+```C
 cd dj-api
 
 # Activate a virtual environment
@@ -70,7 +70,7 @@ and `py manage.py migrate` first and then `py manage.py loaddata fixture` should
 
 ### 3. Confirm your backend is functioning
 
-```
+```C
 py manage.py runserver
 ```
 
@@ -88,7 +88,7 @@ and confirm the initial data was loaded properly.
 
 Open up another terminal (tab or window) and keep your backend running.
 
-```
+```C
 # In the new terminal cd into the next-app directory
 cd next-app
 
