@@ -27,7 +27,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }))
 
 
-const CurrentOrders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Current = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [orderList] = React.useState(orders)
   // const [orderList] = React.useState('') // Cond'tl return test
 
@@ -38,7 +38,6 @@ const CurrentOrders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps
           className={styles.noList}
           variant='h2'
           component='div'
-          color='text.secondary'
         >
           Loading or possibly invalid request..
         </Typography>
@@ -51,9 +50,9 @@ const CurrentOrders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps
       <Container className={styles.main} component='main'>
         <TableContainer className={styles.paper} component={Paper}>
           <Typography
+            className={styles.title}
             variant='h2'
             component='h1'
-            color='text.secondary'
             gutterBottom
           >
             Orders
@@ -95,4 +94,4 @@ export const getStaticProps: GetStaticProps = async _context => {
   }
 }
 
-export default CurrentOrders
+export default Current

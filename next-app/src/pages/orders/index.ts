@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { GetStaticProps } from 'next'
 import { InferGetStaticPropsType } from 'next'
-import { styled } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
 import Paper from '@material-ui/core/Paper'
 import Table from '@material-ui/core/Table'
@@ -13,21 +12,10 @@ import TableRow from '@material-ui/core/TableRow'
 import Typography from '@material-ui/core/Typography'
 import Content from '@/components/Content'
 import { Order } from '@/lib/types'
-import styles from './Orders.module.scss'
+import styles from './Archived.module.scss'
 
 
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
-  '&:nth-of-type(odd)': {
-    backgroundColor: theme.palette.action.hover,
-  },
-  // hide last border
-  '&:last-child td, &:last-child th': {
-    border: 0,
-  },
-}))
-
-
-const ArchivedOrders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [orderList] = React.useState(orders)
   // const [orderList] = React.useState('') // Cond'tl return test
 
@@ -38,7 +26,6 @@ const ArchivedOrders = ({ orders }: InferGetStaticPropsType<typeof getStaticProp
           className={styles.noList}
           variant='h2'
           component='div'
-          color='text.secondary'
         >
           Loading or possibly invalid request..
         </Typography>
@@ -51,29 +38,29 @@ const ArchivedOrders = ({ orders }: InferGetStaticPropsType<typeof getStaticProp
       <Container className={styles.main} component='main'>
         <TableContainer className={styles.paper} component={Paper}>
           <Typography
+            className={styles.title}
             variant='h2'
             component='h1'
-            color='text.secondary'
             gutterBottom
           >
-            Orders
+            Archived Orders
           </Typography>
           <Table size='small' aria-label='table of orders'>
             <TableHead>
-              <StyledTableRow>
+              <TableRow>
                 <TableCell>Id</TableCell>
                 <TableCell align='right'>Date</TableCell>
                 <TableCell align='right'>Name</TableCell>
                 <TableCell align='right'>Location</TableCell>
                 <TableCell align='right'>Card</TableCell>
                 <TableCell align='right'>Sale amount</TableCell>
-              </StyledTableRow>
+              </TableRow>
             </TableHead>
             <TableBody>
               {orderList.map((order: Order) => (
-                <StyledTableRow key={order.id}>
+                <TableRow key={order.id}>
                   <Content order={order} />
-                </StyledTableRow>
+                </TableRow>
               ))}
             </TableBody>
           </Table>
@@ -95,4 +82,4 @@ export const getStaticProps: GetStaticProps = async _context => {
   }
 }
 
-export default ArchivedOrders
+export default Orders

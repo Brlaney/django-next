@@ -19,10 +19,28 @@
     padding: 0 1rem;
     margin: 0 1rem 0 1rem;
     .grid {
-      .item {
-        .paper {
-          .header { 
-            color: $text-dark;
+      .outer {
+        .item {
+          .gridItem {
+            .paper {
+              .header { 
+                color: $text-dark;
+              }
+              .subheader {
+                color: $text-med;
+                margin-bottom: 1rem;
+              }
+              .link {
+                .button {
+                  background: $primary;
+                  width: 300px;
+                  height: 125px;
+                  .endpoint {
+                    color: $text-light;
+                  }
+                }
+              }
+            }
           }
         }
       }

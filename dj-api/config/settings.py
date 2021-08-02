@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = os.environ['django-insecure-o)j7rl+h9r6eog)c*vbm2#e45g5m&p^xm&8oxq=x)sb!l!@^8*']
+SECRET_KEY = 'django-insecure-o)j7rl+h9r6eog)c*vbm2#e45g5m&p^xm&8oxq=x)sb!l!@^8*'
 
 # Best practive is to use environment variables with your SECRET_KEY
 # SECRET_KEY = os.environ['DJ_API_KEY'] 

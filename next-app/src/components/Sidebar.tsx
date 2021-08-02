@@ -31,8 +31,9 @@ const Sidebar = () => {
 
   useEffect(() => {
     if (pathname === '/') setActive('Homepage')
-    else if (pathname === '/current-orders') setActive('Current Orders')
-    else if (pathname === '/archived-orders') setActive('Archived Orders')
+    else if (pathname === '/orders') setActive('Orders')
+    else if (pathname === '/legal') setActive('Legal')
+    else if (pathname === '/contact') setActive('Contact')
   }, [])
 
   return (
@@ -51,14 +52,20 @@ const Sidebar = () => {
         <NavItem
           active={active}
           setActive={setActive}
-          name='Current orders'
-          route='/current-orders'
+          name='Orders'
+          route='/orders'
         />
         <NavItem
           active={active}
           setActive={setActive}
-          name='Archived orders'
-          route='/archived-orders'
+          name='Legal'
+          route='/legal'
+        />
+        <NavItem
+          active={active}
+          setActive={setActive}
+          name='Contact'
+          route='/contact'
         />
       </div>
     </div>
