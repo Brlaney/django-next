@@ -12,7 +12,7 @@ import TableRow from '@material-ui/core/TableRow'
 import Typography from '@material-ui/core/Typography'
 import Content from '@/components/Content'
 import { Order } from '@/lib/types'
-import styles from './Archived.module.scss'
+import styles from './Orders.module.scss'
 
 
 const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
@@ -36,7 +36,7 @@ const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div className={styles.container}>
       <Container className={styles.main} component='main'>
-        <TableContainer className={styles.paper} component={Paper}>
+        <TableContainer className={styles.tableContainer} component={Paper}>
           <Typography
             className={styles.title}
             variant='h2'
@@ -45,7 +45,7 @@ const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
           >
             Archived Orders
           </Typography>
-          <Table size='small' aria-label='table of orders'>
+          <Table className={styles.table} size='small' aria-label='table of orders'>
             <TableHead>
               <TableRow>
                 <TableCell>Id</TableCell>

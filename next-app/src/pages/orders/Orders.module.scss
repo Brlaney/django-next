@@ -1,0 +1,31 @@
+@import '@/styles/theme/theme';
+@import '@/styles/mixins/mixins.scss';
+
+.container {
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .main {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    .tableContainer {
+      justify-content: center;
+      margin: 0.62rem;
+      padding: 0 0.62rem;
+      .title {
+        height: 100%;
+        width: 100%;
+      }
+      .table {
+        padding: 0.62rem;
+      }
+    }
+  }
+}

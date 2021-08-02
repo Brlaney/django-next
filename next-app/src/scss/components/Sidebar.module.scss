@@ -1,9 +1,12 @@
 @import '../theme/theme';
 
 .navChild {
+  height: 100%;
   padding: 0.62rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .active {
     color: $text-dark;
     font-weight: 500;
@@ -12,6 +15,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
     .Link {
       text-decoration: none;
       .navLink {
