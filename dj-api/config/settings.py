@@ -4,10 +4,15 @@ from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['DJ_API_KEY']
+
+SECRET_KEY = os.environ['django-insecure-o)j7rl+h9r6eog)c*vbm2#e45g5m&p^xm&8oxq=x)sb!l!@^8*']
+
+# Best practive is to use environment variables with your SECRET_KEY
+# SECRET_KEY = os.environ['DJ_API_KEY'] 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -35,7 +40,8 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.local.LocaleMiddleware',
+    # The following possibly needs added for lang support
+    # 'django.middleware.local.LocaleMiddleware', 
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -104,9 +110,14 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-# LANGUAGE_CODE = 'en-us'
-LANGUAGE_CODE = 'es'
-TIME_ZONE = 'EC'
+# Spanish ~
+# LANGUAGE_CODE = 'es'
+# TIME_ZONE = 'EC'
+
+# English ~
+LANGUAGE_CODE = 'en-us'
+TIME_ZONE = 'UTC'
+
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
