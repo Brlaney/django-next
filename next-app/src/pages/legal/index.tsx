@@ -44,7 +44,7 @@ export default function Legal() {
               <Grid className={styles.gridItem} item xs={12}>
                 <Paper className={styles.paper} elevation={3}>
                   <div className={styles.link}>
-                    <Link href='/privacy-policy' className={styles.button}>
+                    <Link href='/legal/privacy-policy' className={styles.button}>
                       <Typography className={styles.endpoint} variant='h5' component='h3'>
                         Privacy policy
                       </Typography>
@@ -59,7 +59,7 @@ export default function Legal() {
               <Grid className={styles.gridItem} item xs={12}>
                 <Paper className={styles.paper} elevation={3}>
                   <div className={styles.link}>
-                    <Link href='/terms-of-service' className={styles.button}>
+                    <Link href='/legal/terms-of-service' className={styles.button}>
                       <Typography className={styles.endpoint} variant='h5' component='h3'>
                         Terms of service
                       </Typography>

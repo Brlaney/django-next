@@ -1,12 +1,16 @@
 import * as React from 'react'
-import type { AppProps /*, AppContext */ } from 'next/app'
+import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { ThemeProvider } from '@material-ui/core/styles'
 import { CacheProvider } from '@emotion/react'
-import { AnimatePresence } from 'framer-motion'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import createCache from '@emotion/cache'
+import Container from '@material-ui/core/Container'
+import Grid from '@material-ui/core/Grid'
+import Paper from '@material-ui/core/Paper'
+import Sidebar from '@/components/Sidebar'
+import { AnimatePresence } from 'framer-motion'
 import { title, keywords, description } from '@/lib/seo'
 import theme from '@/lib/theme/theme'
 import '@/styles/globals.scss'
@@ -21,11 +25,10 @@ export default function MyApp (props: AppProps) {
     <CacheProvider value={cache}>
       <Head>
         <meta charSet='utf-8' />
-        <link rel='apple-touch-icon' sizes='180x180' href='favicons/apple-touch-icon.png' />
-        <link rel='icon' type='image/png' sizes='32x32' href='favicons/favicon-32x32.png' />
-        <link rel='icon' type='image/png' sizes='16x16' href='favicons/favicon-16x16.png' />
-        <link rel='manifest' href='favicons/site.webmanifest' />
-        <link rel='mask-icon' href='favicons/safari-pinned-tab.svg' color='#5bbad5' />
+        <link rel='apple-touch-icon' sizes='180x180' href='/favicons/apple-touch-icon.png' />
+        <link rel='icon' type='image/png' sizes='32x32' href='/favicons/favicon-32x32.png' />
+        <link rel='icon' type='image/png' sizes='16x16' href='/favicons/favicon-16x16.png' />
+        <link rel='mask-icon' href='/favicons/safari-pinned-tab.svg' color='#5bbad5' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='keywords' content={keywords} />
         <meta name='description' content={description} />
@@ -34,7 +37,28 @@ export default function MyApp (props: AppProps) {
       <AnimatePresence>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          <Component {...pageProps} key={router.route} />
+          {/* Begin html layout */}
+          <div className='container'>
+            <Container className='main' component='main'>
+              <Grid className='grid' container direction='row' alignItems='center' justifyContent='center'>
+
+                {/* Column 1 - left-side column */}
+                <Grid className='gridItem' item md={3} xs={12}>
+                  <Paper className='sidebar' elevation={3}>
+                    <Sidebar />
+                  </Paper>
+                </Grid>
+
+                {/* Column 2 - right-side column */}
+                <Grid className='gridItem' item md={9} xs={12}>
+                  <Paper className='component' elevation={3}>
+                    <Component {...pageProps} key={router.route} />
+                  </Paper>
+                </Grid>
+              </Grid>
+            </Container>
+          </div>
+          {/* End html layout */}
         </ThemeProvider>
       </AnimatePresence>
     </CacheProvider>

@@ -1,38 +1,9 @@
 @import '../theme/theme';
 @import '../mixins/mixins.scss';
 
-.container {
-  min-height: 100vh;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .main {
-    min-height: 100vh;
-    min-width: 100vw;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    .grid {
-      justify-content: center;
-      margin: 0.62rem;
-      padding: 0 0.62rem;
-      .gridItem {
-        height: 100%;
-        width: 100%;
-        .sidebar {
-          padding: 0.62rem;
-          margin: 0.62rem;
-          height: 50vh;
-        }
-        .item {
-          padding: 0.62rem;
-          margin: 0.62rem;
-          height: 90vh;
-        }
-      }
-    }
-  }
+.title {
+  color: $text-dark;
+  margin: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid $text-light;
 }

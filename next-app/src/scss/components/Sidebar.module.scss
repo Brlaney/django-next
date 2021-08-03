@@ -5,7 +5,7 @@
   padding: 0.62rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   .active {
     color: $text-dark;
@@ -26,6 +26,9 @@
       .navLink:hover {
         text-decoration: underline;
         text-decoration-color: $primary;
+      }
+      .active {
+        font-weight: bold;
       }
     }
   }

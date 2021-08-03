@@ -3,10 +3,10 @@ import Container from '@material-ui/core/Container'
 import Typography from '@material-ui/core/Typography'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
-import Link from '@material-ui/core/Link'
 import { fadeInUp, stagger } from '@/lib/framer/home'
 import { motion } from 'framer-motion'
 import styles from './Contact.module.scss'
+
 
 export default function Contact() {
   return (
@@ -18,13 +18,6 @@ export default function Contact() {
     >
       <Container className={styles.main} component='main'>
         <motion.div className={styles.inner} variants={stagger}>
-
-          <motion.div className={styles.item} variants={fadeInUp}>
-            <Link className={styles.back} href='/' color='primary'>
-              Back
-            </Link>
-          </motion.div>
-
           <motion.div className={styles.item} variants={fadeInUp}>
             <Typography
               className={styles.title}
@@ -77,7 +70,7 @@ export default function Contact() {
 
             <motion.div className={styles.item} variants={fadeInUp}>
               <Button
-                className={styles.formCol}
+                className={styles.button}
                 variant='contained'
                 type='submit'
                 size='large'

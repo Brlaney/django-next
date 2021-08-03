@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@300;400;500;600&display=swap');
 @import './theme/theme';
+@import './mixins/mixins.scss';
 
 html, body {
   padding: 0;
@@ -39,4 +40,39 @@ body::-webkit-scrollbar-thumb,
   background-color: $text-med;
   min-height: 24px;
   border: 3px solid $text-dark;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .main {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    .grid {
+      justify-content: center;
+      margin: 0.62rem;
+      padding: 0 0.62rem;
+      .gridItem {
+        height: 100%;
+        width: 100%;
+        .sidebar {
+          padding: 0.62rem;
+          margin: 0.62rem;
+          height: 50vh;
+        }
+        .component {
+          margin: 0.62rem;
+          height: 90vh;
+        }
+      }
+    }
+  }
 }
