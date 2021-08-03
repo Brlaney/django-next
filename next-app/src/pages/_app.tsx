@@ -45,7 +45,7 @@ export default function MyApp (props: AppProps) {
                 {/* Column 1 - left-side column */}
                 <Grid className='gridItem' item md={3} xs={12}>
                   <Paper className='sidebar' elevation={3}>
-                    <Sidebar />
+                    <Sidebar {...pageProps} key={router.route} />
                   </Paper>
                 </Grid>
 

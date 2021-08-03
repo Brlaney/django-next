@@ -17,11 +17,16 @@
         .title {
           font-weight: 500;
         }
-        .back {
-          font-weight: 500;
-        }
-        .formCol {
-          min-width: 300px;
+      }
+      .form {
+        .item {
+          .formCol {
+            min-width: 300px;
+          }
+          .button {
+            color: $light;
+            background-color: $primary;
+          }
         }
       }
     }

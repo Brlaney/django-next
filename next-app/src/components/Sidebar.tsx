@@ -2,7 +2,6 @@ import * as React from 'react'
 import { useState, useEffect, FunctionComponent } from 'react'
 import { useRouter } from 'next/router'
 import Link from '@material-ui/core/Link'
-import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import LanguageIcon from '@material-ui/icons/Language'
 import Menu from '@material-ui/core/Menu'
@@ -45,17 +44,6 @@ const Sidebar = () => {
   const [language, setLanguage] = useState('english')
   const { pathname } = useRouter()
   const [active, setActive] = useState('')
-  // const lone = 'en'
-  // const ltwo = 'es'
-  // const lthree = 'fr'
-
-  // if (language) return (
-  //   setLanguage(lone)
-  // )
-
-  // const onLangChange = (lang: any) => {
-  //   setLanguage(lang);
-  // }
 
   useEffect(() => {
     if (pathname === '/') setActive('Homepage')
@@ -72,33 +60,29 @@ const Sidebar = () => {
         <NavItem active={active} setActive={setActive} name='Legal' route='/legal' />
         <NavItem active={active} setActive={setActive} name='Contact' route='/contact' />
       </div>
-      <div>
-        <Button
-          id='basic-button'
-          aria-controls='basic-menu'
-          aria-haspopup='true'
-          variant='outlined'
-          color='primary'
-          aria-expanded={open ? 'true' : undefined}
-          onClick={handleClick}
-        >
-          {language}
-        </Button>
-        <Menu
-          id='basic-menu'
-          anchorEl={anchorEl}
-          open={open}
-          onClose={handleClose}
-          MenuListProps={{
-            'aria-labelledby': 'basic-button',
-          }}
-        >
-          <MenuItem>Currently using {language}</MenuItem>
-          <MenuItem onClick={() => setLanguage('en-US')}>English, en-US</MenuItem>
-          <MenuItem onClick={() => setLanguage('es')}>Spanish, es</MenuItem>
-          <MenuItem onClick={() => setLanguage('fr')}>French, fr</MenuItem>
-        </Menu>
-      </div>
+      <IconButton
+        id='basic-button'
+        aria-controls='basic-menu'
+        aria-haspopup='true'
+        aria-expanded={open ? 'true' : undefined}
+        onClick={handleClick}
+      >
+        <LanguageIcon />
+      </IconButton>
+      <Menu
+        id='basic-menu'
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        MenuListProps={{
+          'aria-labelledby': 'basic-button',
+        }}
+      >
+        <MenuItem>Currently using {language}</MenuItem>
+        <MenuItem onClick={() => setLanguage('en-US')}>English, en-US</MenuItem>
+        <MenuItem onClick={() => setLanguage('es')}>Spanish, es</MenuItem>
+        <MenuItem onClick={() => setLanguage('fr')}>French, fr</MenuItem>
+      </Menu>
     </div >
   )
 }

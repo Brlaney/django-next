@@ -31,6 +31,7 @@ export default function Contact() {
           <form
             action='https://getform.io/f/6772130c-7f9c-4e5b-8642-9bbd15059f1c'
             method='POST'
+            className={styles.form}
           >
             <motion.div className={styles.item} variants={fadeInUp}>
               <TextField

@@ -7,6 +7,7 @@ import { fadeInUp, stagger } from '@/lib/framer/home'
 import { motion } from 'framer-motion'
 import styles from './Legal.module.scss'
 
+
 export default function Legal() {
   return (
     <motion.div
