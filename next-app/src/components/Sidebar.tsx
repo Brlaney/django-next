@@ -3,6 +3,7 @@ import { useState, useEffect, FunctionComponent } from 'react'
 import { useRouter } from 'next/router'
 import Link from '@material-ui/core/Link'
 import IconButton from '@material-ui/core/IconButton'
+import Button from '@material-ui/core/Button'
 import LanguageIcon from '@material-ui/icons/Language'
 import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
@@ -24,7 +25,10 @@ const NavItem: FunctionComponent<{
     </Link>
   ) : (
     <Link className={styles.Link} href={route}>
-      <Typography className={styles.active} onClick={() => setActive(name)} variant='h5' component='h5'>
+      <Typography
+        className={styles.active}
+        onClick={() => setActive(name)} variant='h5' component='h5'
+      >
         {name}
       </Typography>
     </Link>
@@ -41,7 +45,7 @@ const Sidebar = () => {
     setAnchorEl(null);
   };
 
-  const [language, setLanguage] = useState('english')
+  const [language, setLanguage] = useState('en-US')
   const { pathname } = useRouter()
   const [active, setActive] = useState('')
 
@@ -78,10 +82,53 @@ const Sidebar = () => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem>Currently using {language}</MenuItem>
-        <MenuItem onClick={() => setLanguage('en-US')}>English, en-US</MenuItem>
-        <MenuItem onClick={() => setLanguage('es')}>Spanish, es</MenuItem>
-        <MenuItem onClick={() => setLanguage('fr')}>French, fr</MenuItem>
+        <MenuItem className={styles.menuItem}>
+          Currently using <span className={styles.highlight}>{language}</span>
+        </MenuItem>
+        <MenuItem className={styles.menuItem}>
+          <Button
+            variant='contained'
+            color='primary'
+            onClick={() => setLanguage('en-US')}
+            fullWidth='true'
+            className={styles.button}
+          >
+            English (en-US)
+          </Button>
+        </MenuItem>
+        <MenuItem className={styles.menuItem}>
+          <Button
+            variant='contained'
+            color='primary'
+            onClick={() => setLanguage('es')}
+            fullWidth='true'
+            className={styles.button}
+          >
+            Spanish (es)
+          </Button>
+        </MenuItem>
+        <MenuItem className={styles.menuItem}>
+          <Button
+            variant='contained'
+            color='primary'
+            onClick={() => setLanguage('fr')}
+            fullWidth='true'
+            className={styles.button}
+          >
+            French (fr)
+          </Button>
+        </MenuItem>
+        <MenuItem className={styles.menuItem}>
+          <Button
+            variant='contained'
+            color='primary'
+            onClick={() => setLanguage('hi')}
+            fullWidth='true'
+            className={styles.button}
+          >
+            Hindi (hi)
+          </Button>
+        </MenuItem>
       </Menu>
     </div >
   )

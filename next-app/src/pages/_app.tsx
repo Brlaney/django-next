@@ -25,10 +25,7 @@ export default function MyApp (props: AppProps) {
     <CacheProvider value={cache}>
       <Head>
         <meta charSet='utf-8' />
-        <link rel='apple-touch-icon' sizes='180x180' href='/favicons/apple-touch-icon.png' />
-        <link rel='icon' type='image/png' sizes='32x32' href='/favicons/favicon-32x32.png' />
-        <link rel='icon' type='image/png' sizes='16x16' href='/favicons/favicon-16x16.png' />
-        <link rel='mask-icon' href='/favicons/safari-pinned-tab.svg' color='#5bbad5' />
+        <link rel='icon' type='image/png' sizes='32x32' href='/dn.svg' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='keywords' content={keywords} />
         <meta name='description' content={description} />
@@ -45,7 +42,7 @@ export default function MyApp (props: AppProps) {
                 {/* Column 1 - left-side column */}
                 <Grid className='gridItem' item md={3} xs={12}>
                   <Paper className='sidebar' elevation={3}>
-                    <Sidebar {...pageProps} key={router.route} />
+                    <Sidebar {...pageProps} />
                   </Paper>
                 </Grid>
 

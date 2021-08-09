@@ -32,6 +32,8 @@ export default function Contact() {
             action='https://getform.io/f/6772130c-7f9c-4e5b-8642-9bbd15059f1c'
             method='POST'
             className={styles.form}
+            noValidate
+            autoComplete='off'
           >
             <motion.div className={styles.item} variants={fadeInUp}>
               <TextField
@@ -42,6 +44,7 @@ export default function Contact() {
                 label='Enter your name'
                 variant='standard'
                 fullWidth={true}
+                autoComplete='off'
               />
             </motion.div>
 
@@ -54,6 +57,7 @@ export default function Contact() {
                 label='Email address'
                 variant='standard'
                 fullWidth={true}
+                autoComplete='off'
               />
             </motion.div>
 

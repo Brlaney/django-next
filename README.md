@@ -15,10 +15,10 @@
 - [Table Of Contents](#table-of-contents)
 - [Features](#features)
 - [Quick Start](#quick-start)
-    - [1. Clone repository](#1-clone-repository)
-    - [2. Setup the backend **Dj-api**](#2-setup-the-backend-dj-api)
-    - [3. Confirm your backend is functioning](#3-confirm-your-backend-is-functioning)
-    - [4. Setup the frontend **next-app**](#4-setup-the-frontend-next-app)
+  - [1. Clone repository](#1-clone-repository)
+  - [2. Setup the backend **Dj-api**](#2-setup-the-backend-dj-api)
+  - [3. Confirm your backend is functioning](#3-confirm-your-backend-is-functioning)
+  - [4. Setup the frontend **next-app**](#4-setup-the-frontend-next-app)
 - [Connect with me](#connect-with-me)
 - [License](#license)
 - [Contributions and issues](#contributions-and-issues)
@@ -34,13 +34,13 @@
 
 # Quick Start
 
-### 1. Clone repository
+## 1. Clone repository
 
 ```C
 git clone https://github.com/Brlaney/django-next.git
 ```
 
-### 2. Setup the backend **Dj-api**
+## 2. Setup the backend **Dj-api**
 
 ```C
 cd dj-api
@@ -68,7 +68,7 @@ The terminal should output: `Installed 30 object(s) from 1 fixture(s)`.
 If an error message appears then run `py manage.py migrate --run-syncdb`
 and `py manage.py migrate` first and then `py manage.py loaddata fixture` should work.
 
-### 3. Confirm your backend is functioning
+## 3. Confirm your backend is functioning
 
 ```C
 py manage.py runserver
@@ -84,7 +84,7 @@ and confirm the initial data was loaded properly.
 
 </br>
 
-### 4. Setup the frontend **next-app**
+## 4. Setup the frontend **next-app**
 
 Open up another terminal (tab or window) and keep your backend running.
 

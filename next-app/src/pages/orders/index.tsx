@@ -20,23 +20,23 @@ const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
   // const [orderList] = React.useState('') // Cond'tl return test
 
   if (!orderList) return (
-    <div className={styles.container}>
+    <>
       <Container className={styles.main} component='main'>
         <Typography
-          className={styles.noList}
+          className={styles.loading}
           variant='h2'
           component='div'
         >
           Loading or possibly invalid request..
         </Typography>
       </Container>
-    </div>
+    </>
   )
 
   return (
-    <div className={styles.container}>
+    <>
       <Container className={styles.main} component='main'>
-        <TableContainer className={styles.tableContainer} component={Paper}>
+        <TableContainer className={styles.container} component={Paper}>
           <Typography
             className={styles.title}
             variant='h2'
@@ -56,9 +56,9 @@ const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
                 <TableCell align='right'>Sale amount</TableCell>
               </TableRow>
             </TableHead>
-            <TableBody>
+            <TableBody className={styles.body}>
               {orderList.map((order: Order) => (
-                <TableRow key={order.id}>
+                <TableRow className={styles.row} key={order.id}>
                   <Content order={order} />
                 </TableRow>
               ))}
@@ -66,7 +66,7 @@ const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
           </Table>
         </TableContainer>
       </Container>
-    </div>
+    </>
   )
 }
 

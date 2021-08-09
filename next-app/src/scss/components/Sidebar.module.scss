@@ -19,6 +19,7 @@
     .Link {
       color: inherit;
       text-decoration: none;
+      margin: 1rem;
       .navLink {
         font-weight: 500;
         text-decoration: none;
@@ -30,6 +31,20 @@
       }
       .active {
         font-weight: bold;
+      }
+    }
+    .Link:hover {
+      text-decoration: underline;
+      text-decoration-color: $primary;
+    }
+  }
+  #basic-menu {
+    .menuItem {
+      .highlight {
+        padding: 0.22rem;
+        margin: 0 0 0 0.33rem;
+        background-color: $text-light;
+        cursor: none;
       }
     }
   }

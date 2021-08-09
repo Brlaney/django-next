@@ -5,40 +5,39 @@
   min-height: 100vh;
   padding: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   .main {
     min-height: 100vh;
-    min-width: 100vw;
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: stretch;
     padding: 0 1rem;
-    margin: 0 1rem 0 1rem;
+    margin: 1rem;
     .grid {
       .outer {
         .item {
           .gridItem {
-            .paper {
-              .header { 
-                color: $text-dark;
-              }
-              .subheader {
-                color: $text-med;
-                margin-bottom: 1rem;
-              }
-              .link {
-                .button {
-                  background: $primary;
-                  width: 300px;
-                  height: 125px;
-                  .endpoint {
-                    color: $text-light;
-                  }
-                }
+            .header { 
+              color: $text-dark;
+              padding: 0.55rem;
+              font-weight: bold;
+              // border-bottom: 1px solid $text-light;
+            }
+            .subheader {
+              font-size: 1.3rem;
+              padding-top: 0.62rem;
+              color: $text-med;
+              margin-bottom: 1rem;
+            }
+            .link {
+              .button {
+                background: $primary;
+                width: 300px;
+                height: 125px;
               }
             }
           }

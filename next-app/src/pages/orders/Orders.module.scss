@@ -1,12 +1,6 @@
 @import '@/styles/theme/theme';
 @import '@/styles/mixins/mixins.scss';
 
-.container {
-  min-height: 100vh;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   .main {
     min-height: 100vh;
     min-width: 100vw;
@@ -15,8 +9,14 @@
     flex: 1;
     justify-content: center;
     align-items: center;
-    .tableContainer {
-      justify-content: center;
+    .loading {
+      padding: 0.7rem;
+      margin: 1.1rem;
+    }
+    .container {
+      justify-content: flex-start;
+      border: 0;
+      background-color: transparent;
       margin: 0.62rem;
       padding: 0 0.62rem;
       .title {
@@ -24,8 +24,7 @@
         width: 100%;
       }
       .table {
-        padding: 0.62rem;
+        width: 50%;
       }
     }
   }
-}
