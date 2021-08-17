@@ -2,7 +2,8 @@
 @import './theme/theme';
 @import './mixins/mixins.scss';
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -22,18 +23,18 @@ a {
   font-family: $primary-font;
 }
 
-body::-webkit-scrollbar, 
+body::-webkit-scrollbar,
 body::-webkit-scrollbar {
   background-color: $text-dark;
 }
 
-body::-webkit-scrollbar-corner, 
+body::-webkit-scrollbar-corner,
 body::-webkit-scrollbar-corner {
   background-color: $text-dark;
 }
 
 body::-webkit-scrollbar-thumb,
- body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   border-radius: 8px;
   background-color: $text-med;
   min-height: 24px;
@@ -46,29 +47,36 @@ body::-webkit-scrollbar-thumb,
   display: flex;
   justify-content: center;
   align-items: center;
+
   .main {
     min-height: 100vh;
     min-width: 100vw;
     display: flex;
-    flex-direction: column;
     flex: 1;
     justify-content: center;
     align-items: center;
+
     .grid {
+      display: flex;
+      flex-direction: row-reverse;
       justify-content: center;
       margin: 0.62rem;
       padding: 0 0.62rem;
+
       .gridItem {
         height: 100%;
         width: 100%;
+        min-width: 185px;
+
         .sidebar {
           padding: 0.62rem;
           margin: 0.62rem;
           height: 50vh;
         }
+
         .component {
           margin: 0.62rem;
-          height: 90vh;
+          height: 70vh;
         }
       }
     }

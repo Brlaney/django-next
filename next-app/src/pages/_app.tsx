@@ -40,18 +40,19 @@ export default function MyApp (props: AppProps) {
               <Grid className='grid' container direction='row' alignItems='center' justifyContent='center'>
 
                 {/* Column 1 - left-side column */}
-                <Grid className='gridItem' item md={3} xs={12}>
+                <Grid className='gridItem' item md={9} sm={9} xs={12}>
+                  <Paper className='component' elevation={3}>
+                    <Component {...pageProps} key={router.route} />
+                  </Paper>
+                </Grid>
+
+                {/* Column 2 - right-side column */}
+                <Grid className='gridItem' item md={3} sm={3} xs={12}>
                   <Paper className='sidebar' elevation={3}>
                     <Sidebar {...pageProps} />
                   </Paper>
                 </Grid>
 
-                {/* Column 2 - right-side column */}
-                <Grid className='gridItem' item md={9} xs={12}>
-                  <Paper className='component' elevation={3}>
-                    <Component {...pageProps} key={router.route} />
-                  </Paper>
-                </Grid>
               </Grid>
             </Container>
           </div>

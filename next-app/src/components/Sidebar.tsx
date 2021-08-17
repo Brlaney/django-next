@@ -9,6 +9,7 @@ import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
 import Typography from '@material-ui/core/Typography'
 import styles from '@/styles/components/Sidebar.module.scss'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 
 
 const NavItem: FunctionComponent<{
@@ -36,6 +37,7 @@ const NavItem: FunctionComponent<{
 }
 
 const Sidebar = () => {
+  const matches = useMediaQuery((theme) => theme.breakpoints.up('md'));
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -55,6 +57,79 @@ const Sidebar = () => {
     else if (pathname === '/legal') setActive('Legal')
     else if (pathname === '/contact') setActive('Contact')
   }, [])
+
+  if (!matches) return (
+    <div id='parent'>
+      <div id='horizontal'>
+        <NavItem active={active} setActive={setActive} name='Homepage' route='/' />
+        <NavItem active={active} setActive={setActive} name='Orders' route='/orders' />
+        <NavItem active={active} setActive={setActive} name='Legal' route='/legal' />
+        <NavItem active={active} setActive={setActive} name='Contact' route='/contact' />
+      </div>
+      <IconButton
+        id='basic-button'
+        aria-controls='basic-menu'
+        aria-haspopup='true'
+        aria-expanded={open ? 'true' : undefined}
+        onClick={handleClick}
+      >
+        <LanguageIcon />
+      </IconButton>
+      <Menu
+        id='new'
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        MenuListProps={{
+          'aria-labelledby': 'basic-button',
+        }}
+      >
+        <MenuItem id='newItem'>
+          Currently using <span className={styles.highlight}>{language}</span>
+        </MenuItem>
+        <MenuItem id='newItem'>
+          <Button
+            variant='contained'
+            color='primary'
+            onClick={() => setLanguage('en-US')}
+            className={styles.button}
+          >
+            English (en-US)
+          </Button>
+        </MenuItem>
+        <MenuItem id='newItem'>
+          <Button
+            variant='contained'
+            color='primary'
+            onClick={() => setLanguage('es')}
+            className={styles.button}
+          >
+            Spanish (es)
+          </Button>
+        </MenuItem>
+        <MenuItem id='newItem'>
+          <Button
+            variant='contained'
+            color='primary'
+            onClick={() => setLanguage('fr')}
+            className={styles.button}
+          >
+            French (fr)
+          </Button>
+        </MenuItem>
+        <MenuItem id='newItem'>
+          <Button
+            variant='contained'
+            color='primary'
+            onClick={() => setLanguage('hi')}
+            className={styles.button}
+          >
+            Hindi (hi)
+          </Button>
+        </MenuItem>
+      </Menu>
+    </div >
+  )
 
   return (
     <div className={styles.navChild}>
@@ -82,48 +157,44 @@ const Sidebar = () => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem className={styles.menuItem}>
+        <MenuItem id='newItem'>
           Currently using <span className={styles.highlight}>{language}</span>
         </MenuItem>
-        <MenuItem className={styles.menuItem}>
+        <MenuItem id='newItem'>
           <Button
             variant='contained'
             color='primary'
             onClick={() => setLanguage('en-US')}
-            fullWidth='true'
             className={styles.button}
           >
             English (en-US)
           </Button>
         </MenuItem>
-        <MenuItem className={styles.menuItem}>
+        <MenuItem id='newItem'>
           <Button
             variant='contained'
             color='primary'
             onClick={() => setLanguage('es')}
-            fullWidth='true'
             className={styles.button}
           >
             Spanish (es)
           </Button>
         </MenuItem>
-        <MenuItem className={styles.menuItem}>
+        <MenuItem id='newItem'>
           <Button
             variant='contained'
             color='primary'
             onClick={() => setLanguage('fr')}
-            fullWidth='true'
             className={styles.button}
           >
             French (fr)
           </Button>
         </MenuItem>
-        <MenuItem className={styles.menuItem}>
+        <MenuItem id='newItem'>
           <Button
             variant='contained'
             color='primary'
             onClick={() => setLanguage('hi')}
-            fullWidth='true'
             className={styles.button}
           >
             Hindi (hi)
