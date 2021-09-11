@@ -34,7 +34,8 @@ export default function MyApp (props: AppProps) {
       <AnimatePresence>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          {/* Begin html layout */}
+
+          {/* Begin wrapped html layout */}
           <div className='container'>
             <Container className='main' component='main'>
               <Grid className='grid' container direction='row' alignItems='center' justifyContent='center'>
@@ -52,11 +53,11 @@ export default function MyApp (props: AppProps) {
                     <Sidebar {...pageProps} />
                   </Paper>
                 </Grid>
-
               </Grid>
             </Container>
           </div>
-          {/* End html layout */}
+          {/* End html wrapped layout */}
+
         </ThemeProvider>
       </AnimatePresence>
     </CacheProvider>

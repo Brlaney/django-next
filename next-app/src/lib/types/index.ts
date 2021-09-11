@@ -8,5 +8,5 @@ export interface Order {
   card: string;
   company: string;
   cost: string;
-  status: string;
+  status?: string;
 };

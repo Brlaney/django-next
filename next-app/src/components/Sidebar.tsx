@@ -1,16 +1,15 @@
-import * as React from 'react'
-import { useState, useEffect, FunctionComponent } from 'react'
-import { useRouter } from 'next/router'
-import Link from '@material-ui/core/Link'
-import IconButton from '@material-ui/core/IconButton'
-import Button from '@material-ui/core/Button'
-import LanguageIcon from '@material-ui/icons/Language'
-import Menu from '@material-ui/core/Menu'
-import MenuItem from '@material-ui/core/MenuItem'
-import Typography from '@material-ui/core/Typography'
-import styles from '@/styles/components/Sidebar.module.scss'
-import useMediaQuery from '@material-ui/core/useMediaQuery'
-
+import * as React from 'react';
+import { useState, useEffect, FunctionComponent } from 'react';
+import { useRouter } from 'next/router';
+import Link from '@material-ui/core/Link';
+import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
+import LanguageIcon from '@material-ui/icons/Language';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import Typography from '@material-ui/core/Typography';
+import styles from '@/styles/components/Sidebar.module.scss';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const NavItem: FunctionComponent<{
   active: string
@@ -34,10 +33,10 @@ const NavItem: FunctionComponent<{
       </Typography>
     </Link>
   )
-}
+};
 
 const Sidebar = () => {
-  const matches = useMediaQuery((theme) => theme.breakpoints.up('md'));
+  const matches = useMediaQuery((theme: any) => theme.breakpoints.up('md'));
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -47,16 +46,16 @@ const Sidebar = () => {
     setAnchorEl(null);
   };
 
-  const [language, setLanguage] = useState('en-US')
-  const { pathname } = useRouter()
-  const [active, setActive] = useState('')
+  const [language, setLanguage] = useState('en');
+  const { pathname } = useRouter();
+  const [active, setActive] = useState('');
 
   useEffect(() => {
     if (pathname === '/') setActive('Homepage')
     else if (pathname === '/orders') setActive('Orders')
     else if (pathname === '/legal') setActive('Legal')
     else if (pathname === '/contact') setActive('Contact')
-  }, [])
+  }, []);
 
   if (!matches) return (
     <div id='parent'>
@@ -129,7 +128,7 @@ const Sidebar = () => {
         </MenuItem>
       </Menu>
     </div >
-  )
+  );
 
   return (
     <div className={styles.navChild}>
@@ -158,13 +157,15 @@ const Sidebar = () => {
         }}
       >
         <MenuItem id='newItem'>
-          Currently using <span className={styles.highlight}>{language}</span>
+          Currently using <span className={styles.highlight}>
+            {language}
+          </span>
         </MenuItem>
         <MenuItem id='newItem'>
           <Button
             variant='contained'
             color='primary'
-            onClick={() => setLanguage('en-US')}
+            onClick={() => setLanguage('en')}
             className={styles.button}
           >
             English (en-US)
@@ -203,6 +204,6 @@ const Sidebar = () => {
       </Menu>
     </div >
   )
-}
+};
 
-export default Sidebar
+export default Sidebar;

@@ -1,11 +1,10 @@
-import * as React from 'react'
-import TableCell from '@material-ui/core/TableCell'
-import { Order } from '@/lib/types'
-
+import * as React from 'react';
+import TableCell from '@material-ui/core/TableCell';
+import { Order } from '@/lib/types';
 
 type Props = {
   order: Order
-}
+};
 
 const Content: React.FC<Props> = ({ order }) => {
   return (
@@ -18,6 +17,6 @@ const Content: React.FC<Props> = ({ order }) => {
       <TableCell align='right'>{order.cost}</TableCell>
     </>
   )
-}
+};
 
-export default Content
+export default Content;

@@ -1,18 +1,19 @@
-import * as React from 'react'
-import { GetStaticProps } from 'next'
-import { InferGetStaticPropsType } from 'next'
-import Container from '@material-ui/core/Container'
-import Paper from '@material-ui/core/Paper'
-import Table from '@material-ui/core/Table'
-import TableBody from '@material-ui/core/TableBody'
-import TableCell from '@material-ui/core/TableCell'
-import TableContainer from '@material-ui/core/TableContainer'
-import TableHead from '@material-ui/core/TableHead'
-import TableRow from '@material-ui/core/TableRow'
-import Typography from '@material-ui/core/Typography'
-import Content from '@/components/Content'
-import { Order } from '@/lib/types'
-import styles from './Orders.module.scss'
+import * as React from 'react';
+import { GetStaticProps } from 'next';
+import { InferGetStaticPropsType } from 'next';
+import Container from '@material-ui/core/Container';
+import Paper from '@material-ui/core/Paper';
+import TableContainer from '@material-ui/core/TableContainer';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Content from '@/components/Content';
+import Typography from '@material-ui/core/Typography';
+import { Order } from '@/lib/types';
+import styles from './Orders.module.scss';
+// import OrderTable from '@/components/OrderTable';
 
 const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [orderList] = React.useState(orders);
@@ -34,15 +35,15 @@ const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
       <Container className={styles.main} component='main'>
+        <Typography
+          className={styles.title}
+          variant='h2'
+          component='h1'
+          gutterBottom
+        >
+          Archived Orders
+        </Typography>
         <TableContainer className={styles.container} component={Paper}>
-          <Typography
-            className={styles.title}
-            variant='h2'
-            component='h1'
-            gutterBottom
-          >
-            Archived Orders
-          </Typography>
           <Table className={styles.table} size='small' aria-label='table of orders'>
             <TableHead>
               <TableRow>
@@ -67,6 +68,28 @@ const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
     </>
   )
 };
+
+// The following encounters a bug --> needs debugged still 
+// The goal is to use the OrderTable component instead of the
+// Content component. Good luck!
+//   return (
+//     <>
+//       <Container className={styles.main} component='main'>
+//         <Typography
+//           className={styles.title}
+//           variant='h2'
+//           component='h1'
+//           gutterBottom
+//         >
+//           Orders
+//         </Typography>
+//         <TableContainer className={styles.container} component={Paper}>
+//           <OrderTable data={orderList} />
+//         </TableContainer>
+//       </Container>
+//     </>
+//   )
+// };
 
 export const getStaticProps: GetStaticProps = async _context => {
   const link = `${process.env.DJANGO_API}`
