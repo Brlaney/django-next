@@ -1,5 +1,5 @@
 {
-  "name": "vercel-app",
+  "name": "django-next",
   "author": "Laney, Brendan",
   "license": "LICENSE",
   "version": "0.1.1",
@@ -17,15 +17,15 @@
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "framer-motion": "^4.1.17",
-    "next": "^11.1.0",
+    "next": "^11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "^1.38.0"
+    "sass": "^1.39.2"
   },
   "devDependencies": {
-    "@types/node": "^16.6.1",
-    "@types/react": "^17.0.18",
+    "@types/node": "^16.9.1",
+    "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
-    "typescript": "^4.3.5"
+    "typescript": "^4.4.3"
   }
 }

@@ -14,10 +14,8 @@ import Content from '@/components/Content'
 import { Order } from '@/lib/types'
 import styles from './Orders.module.scss'
 
-
 const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  const [orderList] = React.useState(orders)
-  // const [orderList] = React.useState('') // Cond'tl return test
+  const [orderList] = React.useState(orders);
 
   if (!orderList) return (
     <>
@@ -31,7 +29,7 @@ const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
         </Typography>
       </Container>
     </>
-  )
+  );
 
   return (
     <>
@@ -68,7 +66,7 @@ const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
       </Container>
     </>
   )
-}
+};
 
 export const getStaticProps: GetStaticProps = async _context => {
   const link = `${process.env.DJANGO_API}`
@@ -80,6 +78,6 @@ export const getStaticProps: GetStaticProps = async _context => {
       orders,
     },
   }
-}
+};
 
-export default Orders
+export default Orders;

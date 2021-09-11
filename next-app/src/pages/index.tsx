@@ -1,7 +1,6 @@
-import * as React from 'react'
-import Typography from '@material-ui/core/Typography'
-import styles from '@/styles/pages/Home.module.scss'                                                  
-
+import * as React from 'react';
+import Typography from '@material-ui/core/Typography';
+import styles from '@/styles/pages/Home.module.scss';
 
 export default function Home() {
   return (
@@ -11,4 +10,4 @@ export default function Home() {
       </Typography>
     </>
   )
-}
+};

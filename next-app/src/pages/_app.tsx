@@ -1,25 +1,25 @@
-import * as React from 'react'
-import type { AppProps } from 'next/app'
-import Head from 'next/head'
-import { useRouter } from 'next/router'
-import { ThemeProvider } from '@material-ui/core/styles'
-import { CacheProvider } from '@emotion/react'
-import CssBaseline from '@material-ui/core/CssBaseline'
-import createCache from '@emotion/cache'
-import Container from '@material-ui/core/Container'
-import Grid from '@material-ui/core/Grid'
-import Paper from '@material-ui/core/Paper'
-import Sidebar from '@/components/Sidebar'
-import { AnimatePresence } from 'framer-motion'
-import { title, keywords, description } from '@/lib/seo'
-import theme from '@/lib/theme/theme'
-import '@/styles/globals.scss'
+import * as React from 'react';
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { ThemeProvider } from '@material-ui/core/styles';
+import { CacheProvider } from '@emotion/react';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import createCache from '@emotion/cache';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import Sidebar from '@/components/Sidebar';
+import { AnimatePresence } from 'framer-motion';
+import { title, keywords, description } from '@/lib/seo';
+import theme from '@/lib/theme/theme';
+import '@/styles/globals.scss';
 
-export const cache = createCache({ key: 'css', prepend: true })
+export const cache = createCache({ key: 'css', prepend: true });
 
 export default function MyApp (props: AppProps) {
-  const { Component, pageProps } = props
-  const router = useRouter()
+  const { Component, pageProps } = props;
+  const router = useRouter();
 
   return (
     <CacheProvider value={cache}>
@@ -61,4 +61,4 @@ export default function MyApp (props: AppProps) {
       </AnimatePresence>
     </CacheProvider>
   )
-}
+};
