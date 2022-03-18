@@ -5,7 +5,7 @@ import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import { fadeInUp, stagger } from '@/lib/framer/home'
 import { motion } from 'framer-motion'
-import styles from './Contact.module.scss'
+import styles from '@/styles/pages/Contact.module.scss'
 
 
 export default function Contact() {

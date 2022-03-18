@@ -5,7 +5,7 @@ import Link from '@material-ui/core/Link'
 import Divider from '@material-ui/core/Divider';
 import { fadeInUp, stagger } from '@/lib/framer/home'
 import { motion } from 'framer-motion'
-import styles from './Legal.module.scss'
+import styles from '@/styles/pages/Legal.module.scss'
 
 
 export default function Legal() {

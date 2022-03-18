@@ -13,7 +13,7 @@ import TableRow from '@material-ui/core/TableRow'
 import Typography from '@material-ui/core/Typography'
 import Content from '@/components/Content'
 import { Order } from '@/lib/types'
-import styles from './Orders.module.scss'
+import styles from '@/styles/pages/Orders.module.scss'
 
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({

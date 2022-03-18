@@ -11,13 +11,13 @@
   },
   "dependencies": {
     "@emotion/cache": "^11.7.1",
-    "@emotion/react": "^11.8.1",
+    "@emotion/react": "^11.8.2",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.8.1",
     "@material-ui/core": "^4.12.3",
     "@material-ui/data-grid": "^4.0.0-alpha.37",
     "@material-ui/icons": "^4.11.2",
-    "@mui/styles": "^5.4.4",
+    "@mui/styles": "^5.5.1",
     "framer-motion": "^6.2.8",
     "next": "^12.1.0",
     "react": "17.0.2",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
-    "@types/react": "^17.0.39",
+    "@types/react": "^17.0.40",
     "@types/react-dom": "^17.0.13",
     "typescript": "^4.6.2"
   }
