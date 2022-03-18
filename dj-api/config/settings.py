@@ -1,14 +1,11 @@
 # config/settings.py
-
 from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
 SECRET_KEY = 'django-insecure-o)j7rl+h9r6eog)c*vbm2#e45g5m&p^xm&8oxq=x)sb!l!@^8*'
 
 # Best practive is to use environment variables with your SECRET_KEY
@@ -20,7 +17,6 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -71,7 +67,6 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Fixtures directory configuration for dump/load - data
-
 FIXTURE_DIRS = (
    (os.path.join(BASE_DIR, 'fixtures')),
 )
@@ -79,7 +74,6 @@ FIXTURE_DIRS = (
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -90,7 +84,6 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -110,10 +103,6 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-# Spanish ~
-# LANGUAGE_CODE = 'es'
-# TIME_ZONE = 'EC'
-
 # English ~
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
@@ -124,18 +113,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-
 STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Django Rest Framework Configurations
 # https://www.django-rest-framework.org/ 
-
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
@@ -145,11 +131,9 @@ REST_FRAMEWORK = {
 
 # Cors configuration
 # https://pypi.org/project/django-cors-headers/
-
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',
     'http://localhost:3000',
     'http://127.0.0.1:8000',
     'http://127.0.0.1:3000',
 ]
-

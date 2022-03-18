@@ -15,7 +15,7 @@ node_modules
 
 # Dj-api - backend Django application
 
-ll_env/
+venv/
 **/__pycache__/
 !**/migrations/
 *.sqlite3

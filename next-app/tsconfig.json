@@ -2,11 +2,21 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["./src/components/*"],
-      "@/styles/*": ["./src/scss/*"],
-      "@/lib/*": ["./src/lib/*"]
+      "@/components/*": [
+        "./src/components/*"
+      ],
+      "@/styles/*": [
+        "./src/scss/*"
+      ],
+      "@/lib/*": [
+        "./src/lib/*"
+      ]
     },
-    "lib": ["dom", "dom.iterable", "esnext", ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "preserve",
@@ -24,8 +34,19 @@
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "incremental": true
   },
-  "include": ["src", "next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["dist", ".next", "node_modules", "build"]
+  "include": [
+    "src",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "dist",
+    ".next",
+    "node_modules",
+    "build"
+  ]
 }

@@ -1,6 +1,5 @@
 import Container from '@material-ui/core/Container'
 import Typography from '@material-ui/core/Typography'
-
 import styles from '@/styles/components/Header.module.scss'
 
 const Header = () => {

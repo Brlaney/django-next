@@ -13,10 +13,20 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: stretch;
     padding: 0 1rem;
     margin: 1rem;
+    .item {
+      .button {
+        font-size: 1.1rem;
+        margin: 0.88rem 0 1.46rem 0;
+      }
+      .header {
+        color: $text-med;
+        padding-bottom: 0.56rem;
+      }
+    }
     .grid {
       .outer {
         .item {
@@ -25,7 +35,6 @@
               color: $text-dark;
               padding: 0.55rem;
               font-weight: bold;
-              // border-bottom: 1px solid $text-light;
             }
             .subheader {
               font-size: 1.3rem;

@@ -12,8 +12,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Content from '@/components/Content';
 import Typography from '@material-ui/core/Typography';
 import { Order } from '@/lib/types';
-import styles from './Orders.module.scss';
-// import OrderTable from '@/components/OrderTable';
+import styles from '@/styles/pages/Orders.module.scss';
 
 const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [orderList] = React.useState(orders);
@@ -41,7 +40,7 @@ const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
           component='h1'
           gutterBottom
         >
-          Archived Orders
+          Orders Table
         </Typography>
         <TableContainer className={styles.container} component={Paper}>
           <Table className={styles.table} size='small' aria-label='table of orders'>
