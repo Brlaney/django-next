@@ -13,32 +13,33 @@ export default function Navbar() {
     <div className={styles.navbar} >
       <nav className={styles.navcontainer}>
         <div className={styles.parent}>
+
           <a href='/' className={styles.brand}>
             BPR Data Analysis
           </a>
-        </div>
 
-        {/* Navbar links - right-end of navbar */}
-        <div className={styles.rightside}>
-          <ul className={styles.list}>
+          {/* Navbar links - right-end of navbar */}
+          <div className={styles.rightside}>
+            <ul className={styles.list}>
 
-            <div className={styles.item}>
+              <div className={styles.item}>
 
-              {/* Iterate over the links array */}
-              {links.map(link => (
-                <Link
-                  key={link.id}
-                  href={{
-                    pathname: link.link,
-                  }}
-                  className={styles.link}
-                >
-                  {link.name}
-                </Link>
-              ))}
+                {/* Iterate over the links array */}
+                {links.map(link => (
+                  <Link
+                    key={link.id}
+                    href={{
+                      pathname: link.link,
+                    }}
+                    className={styles.link}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
 
-            </div>
-          </ul>
+              </div>
+            </ul>
+          </div>
         </div>
       </nav>
     </div>
