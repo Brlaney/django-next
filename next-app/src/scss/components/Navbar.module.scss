@@ -1,0 +1,54 @@
+@import '../theme/theme';
+
+.navbar {
+  font-family: $primary-font;
+  width: 100%;
+  .navcontainer {
+    position: sticky;
+    background-color: $bg-d;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: space-between;
+    width: 100%;
+    .parent {
+      display: flex;
+      padding: 0.66rem 1rem;
+      // width: 100%;
+      .brand {
+        font-family: $primary-font;
+        font-size: 1.6rem;
+        color: $white;
+      }
+      .brand:hover {
+        text-decoration: underline;
+        text-decoration-color: $secondary;
+      }
+    }
+    .rightside {
+      display: flex;
+      align-items: flex-end;
+      align-content: flex-end;
+      flex-direction: column;
+      // width: 100%;
+      padding: 0 0.3rem;
+      font-family: $secondary-font;
+      .list {
+        .item {
+          margin: 0;
+          padding: 0;
+          font-family: $secondary-font;
+          .link {
+            font-size: 1rem;
+            color: $text-light;
+            padding: 0 0.6rem;
+          }
+          .link:hover {
+            text-decoration: underline;
+            text-decoration-color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,23 +1,15 @@
 {
   "name": "django-next",
   "author": "Laney, Brendan",
-  "license": "LICENSE",
+  "license": "MIT",
   "version": "0.1.1",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
-    "@emotion/cache": "^11.10.1",
-    "@emotion/react": "^11.10.0",
-    "@emotion/server": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/data-grid": "^4.0.0-alpha.37",
-    "@material-ui/icons": "^4.11.3",
-    "@mui/styles": "^5.9.3",
     "framer-motion": "^7.1.0",
     "next": "^12.2.5",
     "react": "18.2.0",

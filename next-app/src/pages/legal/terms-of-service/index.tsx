@@ -1,60 +1,40 @@
-import { Typography } from '@material-ui/core'
-import Container from '@material-ui/core/Container'
-import Grid from '@material-ui/core/Grid'
-import Button from '@material-ui/core/Button'
-import Divider from '@material-ui/core/Divider';
-import { fadeInUp, stagger } from '@/lib/framer/home'
-import { motion } from 'framer-motion'
 import Link from 'next/link'
 import styles from '@/styles/pages/Legal.module.scss'
 
-
 export default function TermsOfService() {
   return (
-    <motion.div
-      className={styles.container}
-      initial='initial'
-      animate='animate'
-      exit={{ opacity: 0 }}
-    >
-      <Container className={styles.main} component='main'>
-        <Grid
-          className={styles.grid}
-          container
-          direction='column'
-          alignItems='center'
-          justifyContent='center'
-        >
-          <motion.div className={styles.outer} variants={stagger}>
+    <div className={styles.div}>
+      <div className={styles.main}>
+        <div className={styles.div}>
+          <div className={styles.outer}>
 
             {/* Go back button */}
-            <motion.div className={styles.item} variants={fadeInUp}>
-              <Grid className={styles.item} item xs={12}>
+            <div className={styles.item}>
+              <div className={styles.item}>
                 <Link href='/legal/'>
-                  <Button className={styles.button} variant='contained' color='primary'>
+                  <button className={styles.button}>
                     Back
-                  </Button>
+                  </button>
                 </Link>
-              </Grid>
-            </motion.div>
+              </div>
+            </div>
 
             {/* Page title / header */}
-            <motion.div className={styles.item} variants={fadeInUp}>
-              <Grid className={styles.item} item xs={12}>
-                <Typography className={styles.header} variant='h2' component='h1'>
+            <div className={styles.item}>
+              <div className={styles.item}>
+                <h2 className={styles.header}>
                   Terms of service agreement
-                </Typography>
-              </Grid>
-            </motion.div>
+                </h2>
+              </div>
+            </div>
 
             {/* Divider */}
-            <motion.div className={styles.item} variants={fadeInUp}>
-              <Divider />
-            </motion.div>
+            <div className={styles.item}>
+            </div>
 
-          </motion.div>
-        </Grid>
-      </Container>
-    </motion.div>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }

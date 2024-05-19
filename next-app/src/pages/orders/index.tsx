@@ -1,16 +1,6 @@
 import * as React from 'react';
 import { GetStaticProps } from 'next';
 import { InferGetStaticPropsType } from 'next';
-import Container from '@material-ui/core/Container';
-import Paper from '@material-ui/core/Paper';
-import TableContainer from '@material-ui/core/TableContainer';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Content from '@/components/Content';
-import Typography from '@material-ui/core/Typography';
 import { Order } from '@/lib/types';
 import styles from '@/styles/pages/Orders.module.scss';
 
@@ -19,78 +9,48 @@ const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
   if (!orderList) return (
     <>
-      <Container className={styles.main} component='main'>
-        <Typography
-          className={styles.loading}
-          variant='h2'
-          component='div'
-        >
+      <div className={styles.main}>
+        <h2 className={styles.loading}>
           Loading or possibly invalid request..
-        </Typography>
-      </Container>
+        </h2>
+      </div>
     </>
   );
 
   return (
     <>
-      <Container className={styles.main} component='main'>
-        <Typography
-          className={styles.title}
-          variant='h2'
-          component='h1'
-          gutterBottom
-        >
-          Orders Table
-        </Typography>
-        <TableContainer className={styles.container} component={Paper}>
-          <Table className={styles.table} size='small' aria-label='table of orders'>
-            <TableHead>
-              <TableRow>
-                <TableCell>Id</TableCell>
-                <TableCell align='right'>Date</TableCell>
-                <TableCell align='right'>Name</TableCell>
-                <TableCell align='right'>Location</TableCell>
-                <TableCell align='right'>Card</TableCell>
-                <TableCell align='right'>Sale amount</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody className={styles.body}>
+      <div className={styles.main}>
+        <h2 className={styles.title}>
+          Orders table
+        </h2>
+        <div className={styles.div}>
+          <table className={styles.table}>
+            <th>
+              <tr>
+                <td>Id</td>
+                <td align='right'>Date</td>
+                <td align='right'>Name</td>
+                <td align='right'>Location</td>
+                <td align='right'>Card</td>
+                <td align='right'>Sale amount</td>
+              </tr>
+            </th>
+            <tr className={styles.body}>
               {orderList.map((order: Order) => (
-                <TableRow className={styles.row} key={order.id}>
-                  <Content order={order} />
-                </TableRow>
+                <td className={styles.row} key={order.id}>
+                  {JSON.stringify({ order })}
+                  {/* <Content order={order} /> */}
+                </td>
               ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Container>
+            </tr>
+          </table>
+        </div>
+      </div>
     </>
   )
 };
 
-// The following encounters a bug --> needs debugged still 
-// The goal is to use the OrderTable component instead of the
-// Content component. Good luck!
-//   return (
-//     <>
-//       <Container className={styles.main} component='main'>
-//         <Typography
-//           className={styles.title}
-//           variant='h2'
-//           component='h1'
-//           gutterBottom
-//         >
-//           Orders
-//         </Typography>
-//         <TableContainer className={styles.container} component={Paper}>
-//           <OrderTable data={orderList} />
-//         </TableContainer>
-//       </Container>
-//     </>
-//   )
-// };
-
-export const getStaticProps: GetStaticProps = async _context => {
+export const getStaticProps: GetStaticProps = async (_context) => {
   const link = `${process.env.DJANGO_API}`
   const res = await fetch(link)
   const orders: Order[] = await res.json()
@@ -98,8 +58,45 @@ export const getStaticProps: GetStaticProps = async _context => {
   return {
     props: {
       orders,
-    },
-  }
+    }
+  };
 };
 
 export default Orders;
+
+// return (
+//   <>
+//     <div className={styles.main} component='main'>
+//       <h2
+//         className={styles.title}
+//         variant='h2'
+//         component='h1'
+//         gutterBottom
+//       >
+//         Orders table
+//       </h2>
+//       <div className={styles.div}>
+//         <table className={styles.table}>
+//           <th>
+//             <tableRow>
+//               <td>Id</td>
+//               <td align='right'>Date</td>
+//               <td align='right'>Name</td>
+//               <td align='right'>Location</td>
+//               <td align='right'>Card</td>
+//               <td align='right'>Sale amount</td>
+//             </tableRow>
+//           </th>
+//           <tableBody className={styles.body}>
+//             {orderList.map((order: Order) => (
+//               <tableRow className={styles.row} key={order.id}>
+//                 <Content order={order} />
+//               </tableRow>
+//             ))}
+//           </tableBody>
+//         </table>
+//       </div>
+//     </div>
+//   </>
+// )
+// };

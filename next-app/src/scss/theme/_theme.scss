@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@300;400;500;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&family=Raleway:wght@300;400;500;600&family=Noto+Sans+Math&display=swap');
+
 
 // Palette
 $primary: #2969ff;
-$secondary: #ffce5c;
-$tertiary: #ff5c8d;
-$quaternary: #8dff5c;
-$quinary: #7c5cff;
-$light: #f6f8ffff;
+$secondary: #8D8DB9;
+$tertiary: #E6F4F1;
+$light: #F9F8FF;
 
 // Text colors
-$text-light: #aeaeae;
-$text-med: #50514fff;
+$text-light: #eaeaea;
+$text-med: #aeaeae;
 $text-dark: #363636;
 
 // Background colors
@@ -23,4 +24,75 @@ $bg1: hsla(204, 99%, 36%, 1);
 $bg2: hsla(204, 99%, 36%, 0.67);
 
 // Primary font-family
-$primary-font: 'Raleway', sans-serif;
+// $primary-font: 'Raleway', sans-serif;
+
+$white: #ffffff;
+$black: #000000;
+
+// Background colors
+$bg-dark: #1c1c1c;
+$bg-d: #343a40;
+$bg-m: #525a61;
+$bg-l: #cacfd6ff;
+$bg-ll: #d6e5e3ff;
+$bg-d-100: rgb(205, 213, 220);
+$bg-d-300: rgb(164, 171, 178);
+$bg-d-500: rgb(124, 131, 138);
+$bg-d-700: rgb(87, 93, 100);
+$bg-d-900: rgb(52, 58, 64);
+$bg-df-100: rgba(205, 213, 220, 0.6);
+$bg-df-300: rgba(164, 171, 178, 0.6);
+$bg-df-500: rgba(124, 131, 138, 0.6);
+$bg-df-700: rgba(87, 93, 100, 0.6);
+$bg-df-900: rgba(52, 58, 64, 0.85);
+
+// Box-shadows
+$base-box-shadow-xs: rgba(0, 0, 0, 0.06) 0px 2px 1px;
+$base-box-shadow-sm: rgba(0, 0, 0, 0.08) 0px 4px 7px;
+$base-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+$base-box-shadow-lg: rgba(0, 0, 0, 0.4) 0px 8px 14px;
+
+// Borders
+$border-radius-sm: 3px;
+$border-radius-md: 6px;
+$border-radius-lg: 9px;
+
+
+$primary-font: 'Rubik',
+-apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+'Roboto',
+'Oxygen',
+'Ubuntu',
+'Cantarell',
+'Fira Sans',
+'Droid Sans',
+'Helvetica Neue',
+sans-serif;
+
+$secondary-font: 'Raleway',
+-apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+'Roboto',
+'Oxygen',
+'Ubuntu',
+'Cantarell',
+'Fira Sans',
+'Droid Sans',
+'Helvetica Neue',
+sans-serif;
+
+$tertiary-font: 'Noto Sans Math',
+-apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+'Roboto',
+'Oxygen',
+'Ubuntu',
+'Cantarell',
+'Fira Sans',
+'Droid Sans',
+'Helvetica Neue',
+sans-serif;
