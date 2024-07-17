@@ -3,19 +3,16 @@
 
 .homepage {
   .title {
-    color: $text-light;
+    color: $primary;
     margin: 1rem;
     padding: 1rem;
     border-bottom: 1px solid $text-light;
+    font-size: $font-size-xxxxl; 
   }
-
   .content {
-
     .card {
       width: 260px;
       height: 300px;
-
     }
-
   }
 }

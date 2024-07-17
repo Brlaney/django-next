@@ -21,17 +21,13 @@ export default function Navbar() {
           {/* Navbar links - right-end of navbar */}
           <div className={styles.rightside}>
             <ul className={styles.list}>
-
               <div className={styles.item}>
 
                 {/* Iterate over the links array */}
                 {links.map(link => (
                   <Link
                     key={link.id}
-                    href={{
-                      pathname: link.link,
-                    }}
-                    className={styles.linkTag}
+                    href={{ pathname: link.link, }}
                   >
                     {link.name}
                   </Link>

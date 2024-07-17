@@ -1,9 +1,4 @@
-// @import url('https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@300;400;500;600&display=swap');
-
-// @import url('https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@300;400;500;600&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&family=Raleway:wght@300;400;500;600&family=Noto+Sans+Math&display=swap');
-
 
 // Palette
 $primary: #2969ff;
@@ -20,13 +15,9 @@ $text-dark: #363636;
 $bg-light: #EFFBFF;
 $bg-dark: #272d2dff;
 
-
 $background: #016FB9;
 $bg1: hsla(204, 99%, 36%, 1);
 $bg2: hsla(204, 99%, 36%, 0.67);
-
-// Primary font-family
-// $primary-font: 'Raleway', sans-serif;
 
 $white: #ffffff;
 $black: #000000;
@@ -59,7 +50,25 @@ $border-radius-sm: 3px;
 $border-radius-md: 6px;
 $border-radius-lg: 9px;
 
+// Font sizes
+$font-size-xs: 0.75rem; 
+$font-size-sm: 0.875rem; 
+$font-size-md: 1rem; 
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+$font-size-xxl: 2rem; 
+$font-size-xxxl: 3rem; 
+$font-size-xxxxl: 5rem; 
 
+// Additional font sizes for flexibility
+$font-size-h1: 2.5rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.25rem;
+$font-size-h6: 1rem;
+
+// Fonts
 $primary-font: 'Rubik',
 -apple-system,
 BlinkMacSystemFont,
