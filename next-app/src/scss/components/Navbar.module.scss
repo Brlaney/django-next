@@ -14,40 +14,39 @@
     .parent {
       display: flex;
       padding: 0.66rem 1rem;
+      margin: 0.22rem 0rem;
       height: 90px;
       flex-direction: row;
       align-items: center;
       .brand {
         font-family: $primary-font;
-        font-size: 1.6rem;
-        color: $white;
+        font-size: 2.6rem;
+        color: $text-light;
       }
       .brand:hover {
         text-decoration: underline;
         text-decoration-color: $secondary;
       }
-    }
-    .rightside {
-      display: flex;
-      align-items: flex-end;
-      align-content: flex-end;
-      flex-direction: column;
-      // width: 100%;
-      padding: 0 0.3rem;
-      font-family: $secondary-font;
-      .list {
-        .item {
-          margin: 0;
-          padding: 0;
-          font-family: $secondary-font;
-          .link {
+      .rightside {
+        display: flex;
+        align-items: flex-end;
+        align-content: flex-end;
+        flex-direction: column;
+        padding: 0 0.3rem;
+        font-family: $secondary-font;
+        .list {
+          color: $text-light;
+          .item {
             font-size: 1rem;
             color: $text-light;
             padding: 0 0.6rem;
-          }
-          .link:hover {
-            text-decoration: underline;
-            text-decoration-color: $secondary;
+
+            link {
+              color: $text-light;
+            }
+            .linkTag {
+              color: $text-light;
+            }
           }
         }
       }

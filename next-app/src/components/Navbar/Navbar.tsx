@@ -31,7 +31,7 @@ export default function Navbar() {
                     href={{
                       pathname: link.link,
                     }}
-                    className={styles.link}
+                    className={styles.linkTag}
                   >
                     {link.name}
                   </Link>

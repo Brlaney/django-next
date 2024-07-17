@@ -1,9 +1,21 @@
 @import '../theme/theme';
 @import '../mixins/mixins.scss';
 
-.title {
-  color: $text-dark;
-  margin: 1rem;
-  padding: 1rem;
-  border-bottom: 1px solid $text-light;
+.homepage {
+  .title {
+    color: $text-light;
+    margin: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid $text-light;
+  }
+
+  .content {
+
+    .card {
+      width: 260px;
+      height: 300px;
+
+    }
+
+  }
 }
