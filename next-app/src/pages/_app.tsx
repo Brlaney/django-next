@@ -2,7 +2,7 @@ import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import styles from '@/styles/globals.scss';
 import { seo } from '@/lib/seo';
-import Navbar from '@/components/Navbar/Navbar';
+import Navbar from '@/components/Navbar';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

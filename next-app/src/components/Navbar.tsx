@@ -15,7 +15,7 @@ export default function Navbar() {
         <div className={styles.parent}>
 
           <a href='/' className={styles.brand}>
-            Django-Next
+            django-Next
           </a>
 
           {/* Navbar links - right-end of navbar */}
