@@ -15,7 +15,7 @@ export default function Navbar() {
         <div className={styles.parent}>
 
           <a href='/' className={styles.brand}>
-            BPR Data Analysis
+            Django-Next
           </a>
 
           {/* Navbar links - right-end of navbar */}
@@ -25,19 +25,15 @@ export default function Navbar() {
 
                 {/* Iterate over the links array */}
                 {links.map(link => (
-                  <Link
-                    key={link.id}
-                    href={{ pathname: link.link, }}
-                  >
+                  <Link key={link.id} href={{ pathname: link.link, }}>
                     {link.name}
                   </Link>
                 ))}
-
               </div>
             </ul>
           </div>
         </div>
       </nav>
     </div>
-  )
+  );
 };

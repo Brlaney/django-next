@@ -3,14 +3,14 @@
 .navbar {
   font-family: $primary-font;
   width: 100%;
+  background-color: $bg-d;
   .navcontainer {
     position: sticky;
     background-color: $bg-d;
     display: flex;
     flex-direction: row;
-    // align-items: stretch;
-    align-content: space-between;
-    width: 100%;
+    justify-content: center; /* Center the navcontainer horizontally */
+    width: 100%; /* Ensure navcontainer takes the full width */
     .parent {
       display: flex;
       padding: 0.66rem 1rem;
@@ -18,7 +18,8 @@
       height: 90px;
       flex-direction: row;
       align-items: center;
-      align-content: space-between;
+      justify-content: space-between; /* Distribute space between brand and rightside */
+      width: 100%; /* Ensure parent takes the full width */
       .brand {
         font-family: $primary-font;
         font-size: 2.6rem;
@@ -30,18 +31,17 @@
       }
       .rightside {
         display: flex;
-        align-items: flex-end;
-        align-content: flex-end;
-        flex-direction: column;
-        padding: 0 0.3rem;
+        align-items: center; /* Align items in the center vertically */
         font-family: $secondary-font;
         .list {
+          display: flex; /* Make list items align horizontally */
           .item {
             font-size: $font-size-lg;
             padding: 0 0.6rem;
             a {
               margin: 0 0.5rem;
               color: $text-light;
+              text-decoration: none; /* Optional: Remove underline from links */
             }
             a:hover {
               color: $white;

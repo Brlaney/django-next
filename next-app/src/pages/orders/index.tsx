@@ -21,33 +21,40 @@ const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
     <>
       <div className={styles.main}>
         <h2 className={styles.title}>
-          Orders table
+          Orders
         </h2>
         <div className={styles.div}>
           <table className={styles.table}>
-            <th>
+            <thead>
               <tr>
-                <td>Id</td>
-                <td align='right'>Date</td>
-                <td align='right'>Name</td>
-                <td align='right'>Location</td>
-                <td align='right'>Card</td>
-                <td align='right'>Sale amount</td>
+                <th>Id</th>
+                <th align='right'>Date</th>
+                <th align='right'>Company</th>
+                <th align='right'>Location</th>
+                <th align='right'>Card</th>
+                <th align='right'>Cost</th>
               </tr>
-            </th>
-            <tr className={styles.body}>
+            </thead>
+            <tbody>
               {orderList.map((order: Order) => (
-                <td className={styles.row} key={order.id}>
-                  {JSON.stringify({ order })}
-                  {/* <Content order={order} /> */}
-                </td>
+                <tr className={styles.body} key={order.id}>
+                  <td className={styles.rowHeader}>
+                    {order.id}
+                  </td>
+                  {/* Add other table data here, for example: */}
+                  <td className={styles.row}>{order.date}</td>
+                  <td className={styles.row}>{order.company}</td>
+                  <td className={styles.row}>{order.state}</td>
+                  <td className={styles.row}>{order.card}</td>
+                  <td className={styles.row}>{order.cost}</td>
+                </tr>
               ))}
-            </tr>
+            </tbody>
           </table>
         </div>
       </div>
     </>
-  )
+  );
 };
 
 export const getStaticProps: GetStaticProps = async (_context) => {
@@ -63,40 +70,3 @@ export const getStaticProps: GetStaticProps = async (_context) => {
 };
 
 export default Orders;
-
-// return (
-//   <>
-//     <div className={styles.main} component='main'>
-//       <h2
-//         className={styles.title}
-//         variant='h2'
-//         component='h1'
-//         gutterBottom
-//       >
-//         Orders table
-//       </h2>
-//       <div className={styles.div}>
-//         <table className={styles.table}>
-//           <th>
-//             <tableRow>
-//               <td>Id</td>
-//               <td align='right'>Date</td>
-//               <td align='right'>Name</td>
-//               <td align='right'>Location</td>
-//               <td align='right'>Card</td>
-//               <td align='right'>Sale amount</td>
-//             </tableRow>
-//           </th>
-//           <tableBody className={styles.body}>
-//             {orderList.map((order: Order) => (
-//               <tableRow className={styles.row} key={order.id}>
-//                 <Content order={order} />
-//               </tableRow>
-//             ))}
-//           </tableBody>
-//         </table>
-//       </div>
-//     </div>
-//   </>
-// )
-// };

@@ -6,7 +6,7 @@ export default function Home() {
     <div className={styles.homepage}>
 
       <div className={styles.title}>
-        Django-Next
+        Django and next js
       </div>
       
       <div className={styles.content}>
@@ -15,5 +15,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 };

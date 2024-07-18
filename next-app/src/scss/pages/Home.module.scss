@@ -2,12 +2,16 @@
 @import '../mixins/mixins.scss';
 
 .homepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   .title {
     color: $primary;
     margin: 1rem;
     padding: 1rem;
     border-bottom: 1px solid $text-light;
-    font-size: $font-size-xxxxl; 
+    font-size: 18rem; 
+    text-align: center;
   }
   .content {
     .card {

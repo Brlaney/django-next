@@ -5,21 +5,20 @@ export default function Contact() {
   return (
     <div className={styles.outer}>
       <div className={styles.main}>
-        <div className={styles.inner} variants={stagger}>
-          <div className={styles.item} variants={fadeInUp}>
+        <div className={styles.inner}>
+          <div className={styles.item}>
             <h1>
               Contact me
             </h1>
           </div>
 
-          <form className={styles.form} >
+          <form className={styles.form}>
             <div>
               test
             </div>
           </form>
-
         </div>
-      </d>
+      </div>
     </div>
   )
 }
