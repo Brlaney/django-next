@@ -58,7 +58,15 @@ const Orders = ({ orders }: InferGetStaticPropsType<typeof getStaticProps>) => {
 };
 
 export const getStaticProps: GetStaticProps = async (_context) => {
-  const link = `${process.env.DJANGO_API}`
+  // Testing my new count query param
+  // const link = `${process.env.DJANGO_API}`
+  
+  const baseURL = process.env.BASE_URL;
+  const endpoint = 'generate-random-orders/';
+  const count = 5;
+  
+  const link = `${baseURL}${endpoint}?count=${count}`;
+
   const res = await fetch(link)
   const orders: Order[] = await res.json()
 

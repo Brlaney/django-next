@@ -6,16 +6,14 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex: 1;
-  justify-content: center;
   align-items: center;
   .title {
-    font-size: $font-size-h2;
-    color: $primary;
+    font-size: $font-size-h3;
+    color: $secondary;
     height: 100%;
     width: 100%;
-    margin: 1.2rem 0.6rem;
-    padding: 0.8rem 0.6rem;
+    margin: 0.6rem;
+    padding: 0.6rem;
     text-justify: left;
     width: 85%;
   }
@@ -26,7 +24,7 @@
     width: 100%;
     padding: 1rem;
     .table {
-      width: 85%;
+      width: 90%;
       border-collapse: collapse;
       thead {
         tr {
@@ -44,9 +42,11 @@
       }
       tbody {
         tr {
+          font-size: $font-size-md;
           &.body {
             &:nth-child(even) {
-              background-color: #f9f9f9;
+              // background-color: #f9f9f9;
+              background-color: $secondary2;
             }
             td {
               padding: 0.6rem;
