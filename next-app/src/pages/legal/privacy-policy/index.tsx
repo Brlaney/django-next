@@ -1,61 +1,29 @@
-import { Typography } from '@material-ui/core'
-import Container from '@material-ui/core/Container'
-import Grid from '@material-ui/core/Grid'
-import Button from '@material-ui/core/Button'
-import Divider from '@material-ui/core/Divider';
-import { fadeInUp, stagger } from '@/lib/framer/legal'
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+// import Link from 'next/link'
 import styles from '@/styles/pages/Legal.module.scss'
-
 
 export default function PrivacyPolicy() {
   return (
-    <motion.div
-      className={styles.container}
-      initial='initial'
-      animate='animate'
-      exit={{ opacity: 0 }}
-    >
-      <Container className={styles.main} component='main'>
-        <Grid
-          className={styles.grid}
-          container
-          direction='column'
-          alignItems='center'
-          justifyContent='center'
-        >
-          {/* Begin stagger effect */}
-          <motion.div className={styles.outer} variants={stagger}>
+    <div className={styles.container}>
+      <div className={styles.grid}>
+        {/* Begin stagger effect */}
+        <div className={styles.outer}>
 
-            {/* Go back button */}
-            <motion.div className={styles.item} variants={fadeInUp}>
-              <Grid className={styles.item} item xs={12}>
-                <Link href='/legal/'>
-                  <Button className={styles.button} variant='contained' color='primary'>
-                    Back
-                  </Button>
-                </Link>
-              </Grid>
-            </motion.div>
+          {/* Go back button */}
+          <div className={styles.item}>
+            back button
+          </div>
 
-            {/* Page title / header */}
-            <motion.div className={styles.item} variants={fadeInUp}>
-              <Grid className={styles.item} item xs={12}>
-                <Typography className={styles.header} variant='h2' component='h1'>
-                  Privacy policy page
-                </Typography>
-              </Grid>
-            </motion.div>
+          {/* Page title / header */}
+          <div className={styles.item}>
+            Privacy Policy Page
+          </div>
 
-            {/* Divider */}
-            <motion.div className={styles.item} variants={fadeInUp}>
-              <Divider />
-            </motion.div>
-
-          </motion.div>
-        </Grid>
-      </Container>
-    </motion.div>
-  )
-}
+          {/* Divider */}
+          <div className={styles.item}>
+            g
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};

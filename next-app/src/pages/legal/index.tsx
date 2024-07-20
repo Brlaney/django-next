@@ -5,13 +5,13 @@ export default function Legal() {
   return (
     <div className={styles.container}>
       <div className={styles.main}>
-          <div className={styles.div}>
+        <div className={styles.div}>
           <div className={styles.outer}>
 
             {/* Title */}
             <div className={styles.item}>
               <div className={styles.divItem}>
-                <h2 className={styles.header} variant='h2' component='h1'>
+                <h2 className={styles.header}>
                   We value transparency
                 </h2>
               </div>
@@ -19,7 +19,7 @@ export default function Legal() {
 
             {/* Header */}
             <div className={styles.item}>
-              <Divider />
+              g
             </div>
 
             {/* Subheader */}
@@ -57,5 +57,5 @@ export default function Legal() {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
