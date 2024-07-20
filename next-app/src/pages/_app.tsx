@@ -12,8 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='keywords' content={seo.keywords} />
         <meta name='description' content={seo.description} />
-        {/* <link rel='icon' type='image/svg+xml' href='/django-next-favicon.svg' /> */}
-        <link rel='icon' type='image/svg+xml' href='/dn.svg' />
+        <link rel='icon' type='image/svg+xml' href='/django-next-favicon.svg' />
         <title>{seo.title}</title>
       </Head>
       <div className={styles.container}>
