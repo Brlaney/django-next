@@ -1,5 +1,5 @@
-// import Link from 'next/link'
-import styles from '@/styles/pages/Legal.module.scss'
+import Link from 'next/link';
+import styles from '@/styles/pages/Legal.module.scss';
 
 export default function PrivacyPolicy() {
   return (
@@ -10,8 +10,12 @@ export default function PrivacyPolicy() {
 
           {/* Go back button */}
           <div className={styles.item}>
-            back button
-          </div>
+                <Link href='/legal/'>
+                  <button className={styles.button}>
+                    Back
+                  </button>
+                </Link>
+            </div>
 
           {/* Page title / header */}
           <div className={styles.item}>

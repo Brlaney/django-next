@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '@/styles/pages/Legal.module.scss'
+import styles from '@/styles/pages/Legal.module.scss';
 
 export default function Legal() {
   return (
@@ -35,9 +35,7 @@ export default function Legal() {
             <div className={styles.item}>
               <div className={styles.divItem}>
                 <Link href='/legal/privacy-policy' className={styles.button}>
-                  <h2 className={styles.endpoint}>
                     Privacy policy
-                  </h2>
                 </Link>
               </div>
             </div>
@@ -46,9 +44,7 @@ export default function Legal() {
             <div className={styles.item}>
               <div className={styles.divItem}>
                 <Link href='/legal/terms-of-service' className={styles.button}>
-                  <h2 className={styles.endpoint}>
                     Terms of service
-                  </h2>
                 </Link>
               </div>
             </div>

@@ -1,5 +1,5 @@
-import * as React from 'react'
-import styles from '@/styles/pages/Contact.module.scss'
+import * as React from 'react';
+import styles from '@/styles/pages/Contact.module.scss';
 
 export default function Contact() {
   return (
@@ -20,5 +20,5 @@ export default function Contact() {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
