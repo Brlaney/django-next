@@ -1,4 +1,4 @@
-import Container from '@material-ui/core/Container'
+import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography';
 import styles from '@/styles/components/Header.module.scss'
 

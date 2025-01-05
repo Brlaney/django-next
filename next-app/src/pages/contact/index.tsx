@@ -1,8 +1,8 @@
 import * as React from 'react'
-import Container from '@material-ui/core/Container'
+import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography';
-import TextField from '@material-ui/core/TextField'
-import Button from '@material-ui/core/Button'
+import TextField from '@mui/material/TextField'
+import Button from '@mui/material/Button'
 import { fadeInUp, stagger } from '@/lib/framer/home'
 import { motion } from 'framer-motion'
 import styles from '@/styles/pages/Contact.module.scss'
