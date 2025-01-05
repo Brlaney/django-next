@@ -1,8 +1,8 @@
-import { Typography } from '@material-ui/core'
-import Container from '@material-ui/core/Container'
-import Grid from '@material-ui/core/Grid'
-import Link from '@mui/material/Link';
-import Divider from '@material-ui/core/Divider';
+import { Typography } from '@mui/material'
+import Container from '@mui/material/Container'
+import Grid from '@mui/material/Grid'
+import Link from '@mui/material/Link'
+import Divider from '@mui/material/Divider'
 import { fadeInUp, stagger } from '@/lib/framer/home'
 import { motion } from 'framer-motion'
 import styles from '@/styles/pages/Legal.module.scss'
